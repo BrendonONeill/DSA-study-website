@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+pre code {
+
+    color: white;
+}
+
+.code-block {
+    background-color: rgb(35, 34, 78);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.ds {
+    font-weight: bold;
+    color: orange;
+}
+
+.fn {
+    font-weight: bold;
+    color: violet;
+}
+
+.const {
+    font-weight: bold;
+    color: crimson;
+
+}
+
+.com {
+    font-weight: bold;
+    color: grey;
+}

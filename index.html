@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Algorithms and Data Structures</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div>
+            <h2>Array:</h2>
+            <div class="code-block">
+                <p>Example:</p>
+                <pre><code>
+<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
+
+<span class="const">const</span> array2 = <span class="ds">[</span><span class="data">"Tom","Phil","Simon","Brendon","Gavin"</span><span class="ds">]</span>
+
+<span class="const">const</span> array3 = 
+<span class="ds">[</span><span class="data">1, "Blake", <span class="ds">{</span>name: "Craig"<span class="ds">}</span>, <span class="ds">[</span>1,2,3<span class="ds">]</span> </span><span class="ds">]</span>
+
+</code></pre>
+            </div>
+        </div>
+
+        <h3>Functions:</h3>
+
+        <p>Pop()</p>
+        <p></p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
+
+<span class="const">const</span> item = array<span class="fn">.pop()</span>
+
+console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 5</span>
+
+console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [1,2,3,4]</span>
+
+</code></pre>
+        </div>
+
+        <p>Push()</p>
+        <p></p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
+
+<span class="const">const</span> arrayLength = array<span class="fn">.push(</span><span class="data">6</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 6</span>
+
+console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [1,2,3,4,5,6]</span>
+
+</code></pre>
+        </div>
+
+        <p>Shift()</p>
+        <p></p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
+
+<span class="const">const</span> item = array<span class="fn">.shift()</span>
+
+console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 1</span>
+
+console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [2,3,4,5]</span>
+
+</code></pre>
+        </div>
+
+        <p>Unshift()</p>
+        <p></p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
+
+<span class="const">const</span> arrayLength = array<span class="fn">.unshift(</span><span class="data">9</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 6</span>
+
+console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [9,1,2,3,4,5]</span>
+
+</code></pre>
+        </div>
+
+        <h2>Linked Lists</h2>
+
+        <h3>Singly linked list</h3>
+        <p></p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="fn">Class</span> Node <span class="fn">{</span>
+    <span class="fn">constructor(</span><span class="data">value</span><span class="fn">)</span> <span class="fn">{</span>
+        <span class="const">this.</span>value = value
+        <span class="const">this.</span>next = null
+    <span class="fn">}</span>
+<span class="fn">}</span>
+
+</code></pre>
+        </div>
+        <p>Linked list class</p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="fn">Class</span> LinkedList <span class="fn">{</span>
+    <span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
+        <span class="const">this.</span>head = null
+        <span class="const">this.</span>tail = null
+        <span class="const">this.</span>length = 0
+    <span class="fn">}</span>
+<span class="fn">}</span>
+
+</code></pre>
+        </div>
+        <p>Insert()</p>
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="fn">Class</span> LinkedList <span class="fn">{</span>
+    <span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
+        <span class="const">this.</span>head = null
+        <span class="const">this.</span>tail = null
+        <span class="const">this.</span>length = 0
+    <span class="fn">}</span>
+
+    <span class="fn">Append(</span><span class="data">value</span><span class="fn">){</span>
+        <span class="const">const</span> nodeData = <span class="const">new</span> Node(value)
+        this.length++;
+        if(!this.head)
+        {
+            this.head = nodeData;
+            this.tail = nodeData;
+            return;
+        }
+        else{
+            this.tail.next = nodeData;
+            this.tail = nodeData;
+            return;
+        }
+    <span class="fn">}</span>
+<span class="fn">}</span>
+
+</code></pre>
+        </div>
+
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="const">const</span> List = <span class="const">new</span> <span class="fn">LinkedList()</span>
+
+List<span class="fn">.Append(</span><span class="data">5</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">List</span><span class="fn">) </span><span class="com">/// (5)</span>
+
+List<span class="fn">.Append(</span><span class="data">6</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">List</span><span class="fn">)</span> <span class="com">/// (5)->(6)</span>
+
+</code></pre>
+        </div>
+
+
+
+
+
+    </main>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
