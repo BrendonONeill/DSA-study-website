@@ -23,7 +23,7 @@
                 <pre><code>
 <span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
 
-<span class="const">const</span> array2 = <span class="ds">[</span><span class="data">"Tom","Phil","Simon","Brendon","Gavin"</span><span class="ds">]</span>
+<span class="const">const</span> array2 = <span class="ds">[</span><span class="data">"Tom","Phil","Simon","Gavin"</span><span class="ds">]</span>
 
 <span class="const">const</span> array3 = 
 <span class="ds">[</span><span class="data">1, "Blake", <span class="ds">{</span>name: "Craig"<span class="ds">}</span>, <span class="ds">[</span>1,2,3<span class="ds">]</span> </span><span class="ds">]</span>
@@ -105,7 +105,7 @@ console<span class="fn">.log(</span><span class="data">array</span><span class="
         <div class="code-block">
             <p>Example:</p>
             <pre><code>
-<span class="fn">Class</span> Node <span class="fn">{</span>
+<span class="fn">class</span> Node <span class="fn">{</span>
     <span class="fn">constructor(</span><span class="data">value</span><span class="fn">)</span> <span class="fn">{</span>
         <span class="const">this.</span>value = value
         <span class="const">this.</span>next = null
@@ -118,7 +118,7 @@ console<span class="fn">.log(</span><span class="data">array</span><span class="
         <div class="code-block">
             <p>Example:</p>
             <pre><code>
-<span class="fn">Class</span> LinkedList <span class="fn">{</span>
+<span class="fn">class</span> LinkedList <span class="fn">{</span>
     <span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
         <span class="const">this.</span>head = null
         <span class="const">this.</span>tail = null
@@ -132,7 +132,7 @@ console<span class="fn">.log(</span><span class="data">array</span><span class="
         <div class="code-block">
             <p>Example:</p>
             <pre><code>
-<span class="fn">Class</span> LinkedList <span class="fn">{</span>
+<span class="fn">class</span> LinkedList <span class="fn">{</span>
     <span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
         <span class="const">this.</span>head = null
         <span class="const">this.</span>tail = null
@@ -174,14 +174,76 @@ console<span class="fn">.log(</span><span class="data">List</span><span class="f
 
 </code></pre>
         </div>
+        <p>InsertAt(value)</p>
 
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="fn">class</span> LinkedList <span class="fn">{</span>
+<span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
+    <span class="const">this.</span>head = null
+    <span class="const">this.</span>tail = null
+    <span class="const">this.</span>length = 0
+<span class="fn">}</span>
+
+<span class="fn">InsertAt(</span> value, location <span class="fn">){</span>
+    <span class="fn">if(</span> location > this.length 
+    || location < 0 <span class="fn">){ </span>
+        <span class="fn">return </span>undefined;
+    <span class="fn">} </span>
+    this.length++;
+    <span class="const">const</span> nodeData = <span class="const">new</span> Node(value)
+    <span class="fn">if(</span>location === 0<span class="fn">){</span>
+     nodeData.next = this.head;
+     this.head = nodeData;
+     <span class="fn">return </span>    
+    <span class="fn">}</span>
+    <span class="fn">if(</span>location === this.length - 1<span class="fn">){</span>
+     this.tail.next = nodeData;
+     this.tail = nodeData;
+    <span class="fn">return</span>  
+    <span class="fn">}</span>
+    <span class="const">let</span> curr = this.head;
+    <span class="const">let</span> index = 0
+    <span class="fn">while(</span>(location - 1) > index<span class="fn">){</span>
+        curr = curr.next
+    }
+    nodeData.next = curr.next;
+    curr.next = nodeData;
+<span class="fn">}</span>
+
+</code></pre>
+        </div>
+
+
+        <div class="code-block">
+            <p>Example:</p>
+            <pre><code>
+<span class="const">const</span> List = <span class="const">new</span> <span class="fn">LinkedList()</span>
+
+List<span class="fn">.Append(</span><span class="data">1</span><span class="fn">)</span>
+
+List<span class="fn">.Append(</span><span class="data">2</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">List</span><span class="fn">) </span><span class="com">/// (1)->(2)</span>
+
+List<span class="fn">.InsertAt(</span><span class="data">5, 0</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">List</span><span class="fn">) </span><span class="com">/// (5)->(1)->(2)</span>
+
+List<span class="fn">.InsertAt(</span><span class="data">8, 1</span><span class="fn">)</span>
+
+console<span class="fn">.log(</span><span class="data">List</span><span class="fn">)</span> <span class="com">/// (5)->(8)->(1)->(2)</span>
+
+</code></pre>
+        </div>
 
 
 
 
     </main>
 
-    <script src="" async defer></script>
+    <script src="main.js" async defer></script>
 </body>
 
 </html>
