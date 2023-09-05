@@ -18,4 +18,9 @@ This is a website to help with my DSA study
 - Graphs
 - Heaps
 - Tries
+  
+### Need to focus on
+- String algorithms
+- Tree algorithms
+- Graph algorithms
 
