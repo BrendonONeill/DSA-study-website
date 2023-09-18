@@ -3,18 +3,38 @@ This is a website to help with my DSA study
 
 ## Data Structures
 
-### I know so far
+
 - Array
-- Hash tables
-- Singly linked list
-- Doubly linked list
+  - push()
+  - pop()
+  - shift()
+  - unshift()
+- Singly linked list / Doubly linked list
+  - oush()
+  - pop()
+  - unshift()
+  - shift()
+  - get()
+  - set()
+  - insertAt()
+  - remove()
+  - reverse()
 - Stack
+  - push()
+  - pop()
 - Queue
-
-
-
-### I still getting a grasp on them
+  - enqueue()
+  - dequeue()
+- Hash tables
+  - serach()
+  - insert()
+  - delete()  
 - Trees
+  BFS
+    - preOrder()
+    - inOrder()
+    - postOrder()
+  DFS
 - Graphs
 - Heaps
 - Tries
