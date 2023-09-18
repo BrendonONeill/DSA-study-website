@@ -841,6 +841,107 @@ console<span class="fn">.log(</span><span class="data">List</span><span class="f
         </div>
 
 
+        <h2>Hash-map</h3>
+
+            <h2>Trees</h3>
+                <h3>Binary Tree</h3>
+
+                <p>TreeNode Class</p>
+                <div class="code-block">
+                    <p class="example">Example Code:</p>
+                    <pre><code>
+<span class="fn">class</span>TreeNode<span class="fn">{</span>
+    <span class="fn">constructor(</span><span class="data">value</span><span class="fn">)</span> <span class="fn">{</span>
+        <span class="const">this.</span>value = value
+        <span class="const">this.</span>left = null
+        <span class="const">this.</span>right = null
+    <span class="fn">}</span>
+<span class="fn">}</span>
+
+</code></pre>
+                </div>
+                <h3>Breadth First Search</h3>
+                <div class="code-block">
+                    <p class="example">Example Code:</p>
+                    <pre><code>
+<span class="fn">function</span>preOrder<span class="fn">(</span><span class="data">head</span><span class="fn">){</span>
+    <span class="const">return</span> walk<span class="fn">(</span><span class="data">head, []</span><span class="fn">){</span>
+<span class="fn">}</span>
+
+<span class="fn">function </span>walk<span class="fn">(</span><span class="data">curr, path</span><span class="fn">){</span>
+    <span class="fn">if(</span><span class="data">!curr</span><span class="fn">){</span>
+        <span class="const">return</span> path;
+    <span class="fn">}</span>
+    path.<span class="fn">push(</span>curr.value<span class="fn">)</span>;
+    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
+    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
+    <span class="const">return</span> path;
+<span class="fn">}</span>
+
+</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <p class="example">Example Code:</p>
+                    <pre><code>
+<span class="fn">function</span>preOrder<span class="fn">(</span><span class="data">head</span><span class="fn">){</span>
+    <span class="const">return</span> walk<span class="fn">(</span><span class="data">head, []</span><span class="fn">){</span>
+<span class="fn">}</span>
+
+<span class="fn">function </span>walk<span class="fn">(</span><span class="data">curr, path</span><span class="fn">){</span>
+    <span class="fn">if(</span><span class="data">!curr</span><span class="fn">){</span>
+        <span class="const">return</span> path;
+    <span class="fn">}</span>
+    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
+    path.<span class="fn">push(</span>curr.value<span class="fn">)</span>;
+    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
+    <span class="const">return</span> path;
+<span class="fn">}</span>
+
+</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <p class="example">Example Code:</p>
+                    <pre><code>
+<span class="fn">function</span>preOrder<span class="fn">(</span><span class="data">head</span><span class="fn">){</span>
+    <span class="const">return</span> walk<span class="fn">(</span><span class="data">head, []</span><span class="fn">){</span>
+<span class="fn">}</span>
+
+<span class="fn">function </span>walk<span class="fn">(</span><span class="data">curr, path</span><span class="fn">){</span>
+    <span class="fn">if(</span><span class="data">!curr</span><span class="fn">){</span>
+        <span class="const">return</span> path;
+    <span class="fn">}</span>
+    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
+    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
+    path.<span class="fn">push(</span>curr.value<span class="fn">)</span>;
+    <span class="const">return</span> path;
+<span class="fn">}</span>
+
+</code></pre>
+                </div>
+
+
+
+
+
+
+
+
+                <h3>Depth First Search</h3>
+
+                <h2>Graphs</h3>
+
+
+
+
+                    <h2>Heaps</h3>
+
+
+
+
+
+
 
 
 
