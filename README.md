@@ -30,17 +30,25 @@ This is a website to help with my DSA study
   - insert()
   - delete()  
 - Trees
-  BFS
-    - preOrder()
-    - inOrder()
-    - postOrder()
-  DFS
 - Graphs
 - Heaps
 - Tries
   
-### Need to focus on
-- String algorithms
-- Tree algorithms
-- Graph algorithms
+## Algorithms
+- Search
+  - Linear
+  - Jump
+  - Binary
+- Sorting
+  - Bubble
+  - Merge
+  - Quick sort
+- Linked list
+  - Traversal
+- Trees / Graphs
+  - BFS
+    - preOrder()
+    - inOrder()
+    - postOrder()
+  - DFS
 
