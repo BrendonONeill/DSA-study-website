@@ -38,6 +38,11 @@ This is a website to help with my DSA study
 - Search
   - Linear
   - Jump
+- Sort
+  -  Bubble
+  -  Quick
+  -  Heap
+  -  Merge
   - Binary
 - Sorting
   - Bubble
