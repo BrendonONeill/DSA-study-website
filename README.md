@@ -43,11 +43,7 @@ This is a website to help with my DSA study
   -  Quick
   -  Heap
   -  Merge
-  - Binary
-- Sorting
-  - Bubble
-  - Merge
-  - Quick sort
+  -  Binary
 - Linked list
   - Traversal
 - Trees / Graphs
