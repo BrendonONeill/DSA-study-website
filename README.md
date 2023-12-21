@@ -3,7 +3,7 @@ This is a website to help with my DSA study
 
 ## Data Structures
 
-
+- String
 - Array
   - push()
   - pop()
