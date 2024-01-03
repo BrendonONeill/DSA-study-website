@@ -4,6 +4,35 @@ This is a website to help with my DSA study
 ## Data Structures
 
 - String
+
+**String Reversal:**
+
+**String Palindrome:**
+
+**String Anagrams:**
+
+**String Compression:**
+
+**String Matching:**
+
+**Longest Substring without Repeating Characters:**
+
+**Edit Distance:**
+
+**Longest Palindromic Substring:**
+
+**String Tokenization:**
+
+**Regular Expression Matching:**
+
+**Suffix Tree/Array Construction:**
+
+**String Sorting:**
+
+**Rabin-Karp Algorithm:**
+
+**Aho-Corasick Algorithm:**
+
 - Array
   - push()
   - pop()
