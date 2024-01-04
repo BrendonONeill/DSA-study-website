@@ -5,33 +5,33 @@ This is a website to help with my DSA study
 
 - String
 
-**String Reversal:**
+  **String Reversal:**
 
-**String Palindrome:**
+  **String Palindrome:**
 
-**String Anagrams:**
+  **String Anagrams:**
 
-**String Compression:**
+  **String Compression:**
 
-**String Matching:**
+  **String Matching:**
 
-**Longest Substring without Repeating Characters:**
+  **Longest Substring without Repeating Characters:**
 
-**Edit Distance:**
+  **Edit Distance:**
 
-**Longest Palindromic Substring:**
+  **Longest Palindromic Substring:**
 
-**String Tokenization:**
+  **String Tokenization:**
 
-**Regular Expression Matching:**
+  **Regular Expression Matching:**
 
-**Suffix Tree/Array Construction:**
+  **Suffix Tree/Array Construction:**
 
-**String Sorting:**
+  **String Sorting:**
 
-**Rabin-Karp Algorithm:**
+  **Rabin-Karp Algorithm:**
 
-**Aho-Corasick Algorithm:**
+  **Aho-Corasick Algorithm:**
 
 - Array
   - push()
@@ -81,4 +81,16 @@ This is a website to help with my DSA study
     - inOrder()
     - postOrder()
   - DFS
+ 
+## Structure 
+
+DS
+-String  
+A
+-
+Examples
+- Leetcode examples
+Test files
+-
+
 
