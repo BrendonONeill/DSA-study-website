@@ -5,952 +5,315 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Algorithms and Data Structures</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" async defer></script>
 </head>
 
 <body>
-    <header>
-        <nav></nav>
-    </header>
+    <nav>
+        <div class="mobile-nav">
+            <div>
+                <button class="burger-btn"><img src="burger.svg" height="25" width="25" alt=""></button>
+            </div>
+            <div>
+                <h1>Data & Algos</h1>
+            </div>
+        </div>
+        <div class="main-nav">
+
+        </div>
+    </nav>
     <main>
-        <div>
-            <h2>Array:</h2>
+        <button class="accordion-btn btn-ds">
+            <h2>Array</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>Creating Arrays</h3>
+            <p>About array</p>
             <div class="code-block">
-                <p class="example">Example Code:</p>
-                <pre><code>
-<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
+                <pre>
+                    <code>
+// Creating an empty array
+const arr = [];
 
-<span class="const">const</span> array2 = <span class="ds">[</span><span class="data">"Tom","Phil","Simon","Gavin"</span><span class="ds">]</span>
+// Create an empty array with a set length
+const arr2 = new Array(5);
 
-<span class="const">const</span> array3 = 
-<span class="ds">[</span><span class="data">1, "Blake", <span class="ds">{</span>name: "Craig"<span class="ds">}</span>, <span class="ds">[</span>1,2,3<span class="ds">]</span> </span><span class="ds">]</span>
+// Create an array with values
+const arr3 = ["A","B","C"];
+                    </code>
+                </pre>
+            </div>
+            <h3>Array.push()</h3>
+            <p>array pushing</p>
+            <div class="code-block">
+                <pre>
+                        <code>
+const arr = ["A","B","C"];
+const arr2 = [1,2,3]
+    
+// Pushing D onto the end of the array
+arr.push("D");
+console.log(arr) // ["A","B","C","D"]
 
-</code></pre>
+arr2.push(4,5,6);
+console.log(arr) // [1,2,3,4,5,6]
+
+// You can also use the spread operator
+arr.push(...arr2) // ["A","B","C",1,2,3]
+                             </code>
+                    </pre>
+            </div>
+
+            <h3>Array.pop()</h3>
+            <p>array poping</p>
+            <div class="code-block">
+                <pre>
+                        <code>
+const arr = ["A","B","C"];
+const arr2 = [1,2,3]
+    
+// Popping removes the last element of an 
+// array
+arr.pop();
+console.log(arr) // ["A","B"]
+
+// When popping you can return the popped 
+// value
+const a = arr.pop()
+console.log(a) // "C"
+                             </code>
+                    </pre>
+            </div>
+
+            <h3>Array.Shift()</h3>
+            <p>array shift</p>
+            <div class="code-block">
+                <pre>
+                        <code>
+const arr = ["A","B","C"];
+    
+// shifting removes the first element of 
+// an arr
+arr.shift();
+console.log(arr) // ["B","C"]
+
+// When shifting you can return the shifted 
+// value
+const a = arr.shift()
+console.log(a) // "A"
+                             </code>
+                    </pre>
+            </div>
+
+            <h3>Array.Unshift()</h3>
+            <p>array shift</p>
+            <div class="code-block">
+                <pre>
+                        <code>
+const arr = ["A","B","C"];
+const arr2 = [1,2,3];
+                                
+// Pushing D onto the end of the array
+arr.unshift("D");
+console.log(arr) // ["D","A","B","C"]
+                            
+arr2.unshift(4,5);
+console.log(arr) // [4,5,1,2,3]
+                            
+// You can also use the spread operator
+arr.unshift(...arr2) // [1,2,3,"A","B","C"]
+                             </code>
+                    </pre>
+            </div>
+
+            <h3>Array.Slice()</h3>
+            <p>array slice</p>
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
+
+            <h3>Array.Splice()</h3>
+            <p>array splice</p>
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+
+        <button class="accordion-btn btn-ds">
+            <h2>Singly Linked List</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
             </div>
         </div>
 
-        <h3>Functions:</h3>
-
-        <p>Pop()</p>
-        <p></p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
-
-<span class="const">const</span> item = array<span class="fn">.pop()</span>
-
-console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 5</span>
-
-console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [1,2,3,4]</span>
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Doubly Linked List</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <p>Push()</p>
-        <p></p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
-
-<span class="const">const</span> arrayLength = array<span class="fn">.push(</span><span class="data">6</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 6</span>
-
-console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [1,2,3,4,5,6]</span>
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Stack</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <p>Shift()</p>
-        <p></p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
-
-<span class="const">const</span> item = array<span class="fn">.shift()</span>
-
-console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 1</span>
-
-console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [2,3,4,5]</span>
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Queues</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <p>Unshift()</p>
-        <p></p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="const">const</span> array = <span class="ds">[</span><span class="data">1,2,3,4,5</span><span class="ds">]</span>
-
-<span class="const">const</span> arrayLength = array<span class="fn">.unshift(</span><span class="data">9</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">item</span><span class="fn">)</span> <span class="com">// 6</span>
-
-console<span class="fn">.log(</span><span class="data">array</span><span class="fn">)</span> <span class="com">// [9,1,2,3,4,5]</span>
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Hash Tables</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <h2>Linked Lists</h2>
-
-        <h3>Singly linked list</h3>
-        <p></p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> Node <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="data">value</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>value = value
-        <span class="const">this.</span>next = null
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-        <p>Linked list class</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-<!-- PUSH() -->
-</code></pre>
-        </div>
-        <p>Push()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Push(</span><span class="data">value</span><span class="fn">){</span>
-        <span class="const">const</span> nodeData = <span class="const">new</span> Node(value)
-        this.length++;
-        if(!this.head)
-        {
-            this.head = nodeData;
-            this.tail = nodeData;
-            return;
-        }
-        else{
-            this.tail.next = nodeData;
-            this.tail = nodeData;
-            return;
-        }
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Tree</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="const">const</span> List = <span class="const">new</span> <span class="fn">LinkedList()</span>
-
-List<span class="fn">.Append(</span><span class="data">5</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">List</span><span class="fn">) </span><span class="com">/// (5)</span>
-
-List<span class="fn">.Append(</span><span class="data">6</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">List</span><span class="fn">)</span> <span class="com">/// (5)->(6)</span>
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Graph</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <!-- Pop() -->
-
-
-        <p>Pop()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Pop(</span><span class="fn">){</span>
-        <span class="fn">if(</span><span class="data">!this.head</span><span class="fn">){</span>
-            <span class="const">return</span> undefined
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.head
-        <span class="const">let</span> pre = this.head
-        <span class="fn">while(</span> <span class="data">temp.next</span><span class="fn">){</span>
-            pre = temp
-            temp = temp.next
-        <span class="fn">}</span>
-        this.tail = pre
-        this.tail.next = null
-        this.length--
-        <span class="fn">if(</span><span class="data">this.length === 0</span><span class="fn">){</span>
-            this.head = null
-            this.tail = null
-        <span class="fn">}</span>
-        <span class="const">return</span> temp
-    <span class="fn">}</span>
-<span class="fn">}</span>
-        
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Trie</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
-        <p>Unshift()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Unshift(</span><span class="data">Value</span><span class="fn">){</span>
-        <span class="const">const</span> nodeData = <span class="const">new</span> Node(value)
-        <span class="fn">if(</span><span class="data">!this.head</span><span class="fn">){</span>
-            this.head = nodeData;
-            this.tail = nodeData;
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-            nodeData.next = this.head;
-            this.head = nodeData;
-        <span class="fn">}</span>
-        this.length++
-        <span class="const">return</span>
-    <span class="fn">}</span>
-<span class="fn">}</span>
-        
-
-</code></pre>
-        </div>
-
-        <p>Shift()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Shift(</span><span class="fn">){</span>
-        <span class="fn">if(</span><span class="data">!this.head</span><span class="fn">){</span>
-            <span class="const">return</span> undefined
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.head
-        this.head = this.head.next
-        temp.next = null
-        this.length--
-        <span class="fn">if(</span><span class="data">this.length === 0</span><span class="fn">){</span>
-            this.tail = null
-        <span class="fn">}</span>
-        <span class="const">return</span> temp
-    <span class="fn">}</span>
-<span class="fn">}</span>
-        
-
-</code></pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Heap</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
 
 
-        <p>Get(index)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Get(</span><span class="data">index</span><span class="fn">){</span>
-        <span class="fn">if(</span><span class="data">index < 0 || index >= this.length</span><span class="fn">){</span>
-            <span class="const">return</span> undefined
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.head;
-        <span class="fn">for(</span><span class="const">let</span><span class="data"> i = 0; i < index; i++</span> <span class="fn">){</span>
-            temp = temp.next
-        <span class="fn">}</span>
-        <span class="const">return</span> temp;
-    <span class="fn">}</span>
-        
-
-</code></pre>
+        <button class="accordion-btn btn-a">
+            <h2>Sorting()</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
 
-        <p>Set(index, value)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Set(</span><span class="data">index, value</span><span class="fn">){</span>
-        <span class="const">let</span> temp = this.Get(index)
-        <span class="fn">if(</span><span class="data">temp</span><span class="fn">){</span>
-            temp.value = value
-            <span class="const">return</span> true
-        <span class="fn">}</span>
-        <span class="const">return</span> false
-    <span class="fn">}</span>
-        
-
-</code></pre>
+        <button class="accordion-btn btn-a">
+            <h2>Search()</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
 
 
-        <p>InsertAt(value, index)</p>
-
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">InsertAt(</span>value, index<span class="fn">){</span>
-    <span class="fn">if(</span>index === 0<span class="fn">){</span>
-        <span class="const">return</span> this.Unshift(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index === this.length<span class="fn">){</span>
-        <span class="const">return</span> this.Push(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index < 0 || index > this.length<span class="fn">){</span>
-        <span class="const">return</span> false;
-    <span class="fn">}</span>
-    <span class="const">let</span> nodeData = <span class="const">new</span> Node(value)
-    <span class="const">let</span> temp = this.Get(index - 1)
-    nodeData.next = temp.next
-    temp.next = nodeData
-    this.length++
-    <span class="const">return</span> true;    
-<span class="fn">}</span>
-
-</code></pre>
+        <button class="accordion-btn btn-a">
+            <h2>Tree Search()</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
-
-
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="const">const</span> List = <span class="const">new</span> <span class="fn">LinkedList()</span>
-
-List<span class="fn">.Append(</span><span class="data">1</span><span class="fn">)</span>
-
-List<span class="fn">.Append(</span><span class="data">2</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">List</span><span class="fn">) </span><span class="com">/// (1)->(2)</span>
-
-List<span class="fn">.InsertAt(</span><span class="data">5, 0</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">List</span><span class="fn">) </span><span class="com">/// (5)->(1)->(2)</span>
-
-List<span class="fn">.InsertAt(</span><span class="data">8, 1</span><span class="fn">)</span>
-
-console<span class="fn">.log(</span><span class="data">List</span><span class="fn">)</span> <span class="com">/// (5)->(8)->(1)->(2)</span>
-
-</code></pre>
-        </div>
-
-
-
-        <p>Remove(index)</p>
-
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">Remove(</span>index<span class="fn">){</span>
-    <span class="fn">if(</span>index === 0<span class="fn">){</span>
-        <span class="const">return</span> this.Shift(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index === this.length - 1<span class="fn">){</span>
-        <span class="const">return</span> this.Pop(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index < 0 || index >= this.length<span class="fn">){</span>
-        <span class="const">return</span> undefined;
-    <span class="fn">}</span>
-    <span class="const">let</span> before = this.get(index - 1)
-    <span class="const">let</span> temp = before.next
-    before.next = temp.next
-    temp.next = null
-    this.length--
-    <span class="const">return</span> temp;    
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-
-        <p>Reverse()</p>
-
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> LinkedList <span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">Reverse(){</span>
-    <span class="const">let</span> temp = this.head;
-    this.head = this.tail;
-    this.tail = temp;
-    <span class="const">let</span> next = temp.next;
-    <span class="const">let</span> prev = null
-    <span class="fn">for(</span> <span class="const">let</span> i = 0; i < this.length; i++ <span class="fn">){</span>
-        next = temp.next;
-        temp.next = prev;
-        prev = temp;
-        temp = next
-    <span class="fn">}</span>
-    <span class="const">return</span>
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-        <h2>Doubly LinkedList</h2>
-
-        <p>Doubly class Node</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoubleNode <span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="data">value</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>value = value
-        <span class="const">this.</span>prev = null
-        <span class="const">this.</span>next = null
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-        <p>Push(value)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList <span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">Push(</span><span class="data">value</span><span class="fn">){</span>
-    <span class="const">const</span> nodeDD = <span class="const">new</span> DoubleNode(value)
-    this.length++;
-   <span class="fn">if(</span>!this.head <span class="fn">){</span>
-        this.head = nodeDD;
-        this.tail = nodeDD;
-        <span class="const">return</span>
-    <span class="fn">}</span>
-   <span class="fn">else{</span>
-        this.tail.next = nodeDD;
-        nodeDD.prev = this.tail;
-        this.tail = nodeDD;
-        <span class="const">return</span>;
-    <span class="fn">}</span>
-<span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-        <p>Pop()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList <span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">Pop(){</span>
-    <span class="fn">if(</span> <span class="data">this.length === 0</span> <span class="fn">){</span>
-        <span class="const">return</span> undefined;
-    <span class="fn">}</span>
-    <span class="const">let</span> temp = this.tail;
-    <span class="fn">if(</span><span class="data">this.length === 1</span><span class="fn">){</span>
-        this.head = null;
-        this.tail = null;
-    <span class="fn">}</span>
-    <span class="fn">else{</span>
-        this.tail = this.tail.prev;
-        this.tail.next = null;
-        temp.prev = null
-    <span class="fn">}</span>
-    this.length--
-    <span class="const">return</span> temp
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-
-        <p>Unshift(value)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Unshift(</span>value<span class="fn">){</span>
-        <span class="const">const</span> nodeDD = <span class="const">new</span> DoubleNode(value)
-        <span class="fn">if(</span><span class="data">!this.head</span><span class="fn">){</span>
-            this.head = nodeDD;
-            this.tail = nodeDD;
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-            nodeDD.next = this.head;
-            this.hea.prev = nodeDD
-            this.head = nodeDD;
-        <span class="fn">}</span>
-        this.length++
-        <span class="const">return</span>
-    <span class="fn">}</span>
-        
-
-</code></pre>
-        </div>
-
-        <p>Shift()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Shift(){</span>
-        <span class="fn">if(</span><span class="data">!this.head</span><span class="fn">){</span>
-            <span class="const">return</span> undefined
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.head
-        <span class="fn">if(</span><span class="data">this.length === 1</span><span class="fn">){</span>
-            this.head = null;
-            this.tail = null;
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-            this.head = this.head.next;
-            this.hea.prev = null;
-            temp.next = null
-        <span class="fn">}</span>
-        this.length--
-        <span class="const">return</span> temp;
-    <span class="fn">}</span>
-        
-
-</code></pre>
-        </div>
-
-        <p>Get(index)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Get(</span><span class="data">index</span><span class="fn">){</span>
-        <span class="fn">if(</span><span class="data">index < 0 || index >= this.length</span><span class="fn">){</span>
-            <span class="const">return</span> undefined
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.head;
-        <span class="fn">if(</span><span class="data">index < this.length/2</span> <span class="fn">){</span>
-            <span class="fn">for(</span><span class="const">let</span><span class="data"> i = 0; i < index; i++</span> <span class="fn">){</span>
-                temp = temp.next;
-            <span class="fn">}</span>
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-                temp = this.tail
-                <span class="fn">for(</span><span class="const">let</span><span class="data"> i = this.length - 1;
-                i > index; i--</span> <span class="fn">){</span>
-                temp = temp.prev;
-            <span class="fn">}</span>
-        <span class="fn">}</span>
-        <span class="const">return</span> temp;
-<span class="fn">}</span>
-        
-
-</code></pre>
-        </div>
-
-        <p>Set(index, value)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>head = null
-        <span class="const">this.</span>tail = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Set(</span><span class="data">index, value</span><span class="fn">){</span>
-        <span class="const">let</span> temp = this.Get(index)
-        <span class="fn">if(</span><span class="data">temp</span><span class="fn">){</span>
-            temp.value = value
-            <span class="const">return</span> true
-        <span class="fn">}</span>
-        <span class="const">return</span> false
-    <span class="fn">}</span>
-        
-
-</code></pre>
-        </div>
-
-        <p>InsertAt(value, index)</p>
-
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList<span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">InsertAt(</span>value, index<span class="fn">){</span>
-    <span class="fn">if(</span>index === 0<span class="fn">){</span>
-        <span class="const">return</span> this.Unshift(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index === this.length<span class="fn">){</span>
-        <span class="const">return</span> this.Push(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index < 0 || index > this.length<span class="fn">){</span>
-        <span class="const">return</span> false;
-    <span class="fn">}</span>
-    <span class="const">let</span> nodeDD = <span class="const">new</span> DoubleNode(value)
-    <span class="const">let</span> before = this.Get(index - 1)
-    <span class="const">let</span> after = before.next;
-    nodeDD.next = after
-    before.next = nodeDD
-    after.prev = nodeDD
-    nodeDD.prev = before
-    this.length++
-    <span class="const">return</span> true;    
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-        <p>Remove(index)</p>
-
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> DoublyLinkedList<span class="fn">{</span>
-<span class="fn">constructor(</span><span class="fn"> )</span> <span class="fn">{</span>
-    <span class="const">this.</span>head = null
-    <span class="const">this.</span>tail = null
-    <span class="const">this.</span>length = 0
-<span class="fn">}</span>
-
-<span class="fn">Remove(</span>index<span class="fn">){</span>
-    <span class="fn">if(</span>index === 0<span class="fn">){</span>
-        <span class="const">return</span> this.Shift(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index === this.length - 1<span class="fn">){</span>
-        <span class="const">return</span> this.Pop(value);
-    <span class="fn">}</span>
-    <span class="fn">if(</span>index < 0 || index >= this.length<span class="fn">){</span>
-        <span class="const">return</span> undefined;
-    <span class="fn">}</span>
-    <span class="const">let</span> temp = this.Get(index)
-    temp.prev.next = temp.next;
-    temp.next.prev = temp.prev;
-    temp.next = null;
-    temp.prev = null;
-    this.length--
-    <span class="const">return</span> temp;    
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-        <h2>Stack</h2>
-        <p>Push()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> Stack<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>top = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Push(</span><span class="data">value</span><span class="fn">){</span>
-        <span class="const">const</span> nodeData = <span class="const">new</span> Node(value)
-        <span class="fn">if(</span><span class="data">!this.top</span><span class="fn">){</span>
-            this.top = nodeData;
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-            nodeData.next = this.top;
-            this.top = nodeData;
-        <span class="fn">}</span>
-        this.length++
-        <span class="const">return</span>
-    <span class="fn">}</span>
-        
-
-</code></pre>
-        </div>
-
-        <p>Pop()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> Stack<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>top = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Pop(</span><span class="fn">){</span>
-        <span class="fn">if(</span><span class="data">!this.top</span><span class="fn">){</span>
-            <span class="const">return</span> undefined
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.top
-        this.top = this.top.next
-        temp.next = null
-        this.length--
-        <span class="const">return</span> temp
-    <span class="fn">}</span>
-
-        </code></pre>
-        </div>
-
-        <h2>Queue</h2>
-        <p>Enqueue(value)</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> Queue<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>first = null
-        <span class="const">this.</span>last = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Enqueue(</span><span class="data">value</span><span class="fn">){</span>
-        <span class="const">const</span> nodeData = <span class="const">new</span> Node(value)
-        this.length++;
-        <span class="fn">if(</span><span class="data">!this.first</span><span class="fn">){</span>
-            this.first = nodeData;
-            this.last = nodeData;
-            <span class="const">return</span>;
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-            this.last.next = nodeData;
-            this.last = nodeData;
-            <span class="const">return</span>;
-        <span class="fn">}</span>
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-
-        <p>Dequeue()</p>
-        <div class="code-block">
-            <p class="example">Example Code:</p>
-            <pre><code>
-<span class="fn">class</span> Queue<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>first = null
-        <span class="const">this.</span>last = null
-        <span class="const">this.</span>length = 0
-    <span class="fn">}</span>
-
-    <span class="fn">Dequeue(){</span>
-        <span class="fn">if(</span><span class="data">!this.first</span><span class="fn">){</span>
-            <span class="const">return</span> undefined;
-        <span class="fn">}</span>
-        <span class="const">let</span> temp = this.first;
-        <span class="fn">if(</span><span class="data">this.length === 1</span><span class="fn">){</span>
-            this.first = null;
-            this.last = null;
-        <span class="fn">}</span>
-        <span class="fn">else{</span>
-            this.first = this.first.next;
-            temp.next = null;
-        <span class="fn">}</span>
-        this.length--;
-        <span class="const">return</span>;
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
-        </div>
-
-
-        <h2>Hash-map</h3>
-
-            <h2>Trees</h3>
-                <h3>Binary Tree</h3>
-
-                <p>TreeNode Class</p>
-                <div class="code-block">
-                    <p class="example">Example Code:</p>
-                    <pre><code>
-<span class="fn">class</span>TreeNode<span class="fn">{</span>
-    <span class="fn">constructor(</span><span class="data">value</span><span class="fn">)</span> <span class="fn">{</span>
-        <span class="const">this.</span>value = value
-        <span class="const">this.</span>left = null
-        <span class="const">this.</span>right = null
-    <span class="fn">}</span>
-<span class="fn">}</span>
-
-</code></pre>
-                </div>
-                <h3>Breadth First Search</h3>
-                <div class="code-block">
-                    <p class="example">Example Code:</p>
-                    <pre><code>
-<span class="fn">function</span>preOrder<span class="fn">(</span><span class="data">head</span><span class="fn">){</span>
-    <span class="const">return</span> walk<span class="fn">(</span><span class="data">head, []</span><span class="fn">){</span>
-<span class="fn">}</span>
-
-<span class="fn">function </span>walk<span class="fn">(</span><span class="data">curr, path</span><span class="fn">){</span>
-    <span class="fn">if(</span><span class="data">!curr</span><span class="fn">){</span>
-        <span class="const">return</span> path;
-    <span class="fn">}</span>
-    path.<span class="fn">push(</span>curr.value<span class="fn">)</span>;
-    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
-    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
-    <span class="const">return</span> path;
-<span class="fn">}</span>
-
-</code></pre>
-                </div>
-
-                <div class="code-block">
-                    <p class="example">Example Code:</p>
-                    <pre><code>
-<span class="fn">function</span>preOrder<span class="fn">(</span><span class="data">head</span><span class="fn">){</span>
-    <span class="const">return</span> walk<span class="fn">(</span><span class="data">head, []</span><span class="fn">){</span>
-<span class="fn">}</span>
-
-<span class="fn">function </span>walk<span class="fn">(</span><span class="data">curr, path</span><span class="fn">){</span>
-    <span class="fn">if(</span><span class="data">!curr</span><span class="fn">){</span>
-        <span class="const">return</span> path;
-    <span class="fn">}</span>
-    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
-    path.<span class="fn">push(</span>curr.value<span class="fn">)</span>;
-    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
-    <span class="const">return</span> path;
-<span class="fn">}</span>
-
-</code></pre>
-                </div>
-
-                <div class="code-block">
-                    <p class="example">Example Code:</p>
-                    <pre><code>
-<span class="fn">function</span>preOrder<span class="fn">(</span><span class="data">head</span><span class="fn">){</span>
-    <span class="const">return</span> walk<span class="fn">(</span><span class="data">head, []</span><span class="fn">){</span>
-<span class="fn">}</span>
-
-<span class="fn">function </span>walk<span class="fn">(</span><span class="data">curr, path</span><span class="fn">){</span>
-    <span class="fn">if(</span><span class="data">!curr</span><span class="fn">){</span>
-        <span class="const">return</span> path;
-    <span class="fn">}</span>
-    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
-    <span class="fn">walk(</span>curr.left, path<span class="fn">)</span>;
-    path.<span class="fn">push(</span>curr.value<span class="fn">)</span>;
-    <span class="const">return</span> path;
-<span class="fn">}</span>
-
-</code></pre>
-                </div>
-
-
-
-
-
-
-
-
-                <h3>Depth First Search</h3>
-
-                <h2>Graphs</h3>
-
-
-
-
-                    <h2>Heaps</h3>
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
 
-    <script src="main.js" async defer></script>
+
 </body>
 
 </html>

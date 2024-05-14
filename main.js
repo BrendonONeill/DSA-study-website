@@ -1,3 +1,30 @@
+const accBtn = document.getElementsByClassName("accordion-btn");
+const panel = document.getElementsByClassName("panel");
+const arrow = document.getElementsByClassName("arrow")
+const test = ["A","B","C"];
+const arr1 = [1,2,3,4]; 
+test.unshift(...arr1);
+console.log(test)
+
+for (let i = 0; i < accBtn.length; i++) {
+        accBtn[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        arrow[i].classList.toggle("rotate");
+        if (panel[i].style.maxHeight) {
+            panel[i].style.maxHeight = null;
+        } else {
+            panel[i].style.maxHeight = panel[i].scrollHeight + "px";
+        }
+    });
+}
+
+
+
+
+
+
+
+
 
 class Node {
     constructor(value) {
