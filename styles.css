@@ -23,6 +23,38 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.burger-btn {
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+nav {
+    background-color: purple;
+    width: 100vw;
+    color: white;
+}
+
+.mobile-nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 pre code {
 
     color: var(--code-main-colour);
@@ -71,6 +103,39 @@ pre code {
 
 h2 {
     font-weight: bold;
-    text-decoration: underline;
     font-size: 2rem;
+}
+
+.btn-ds {
+    background-color: aquamarine;
+}
+
+.btn-a {
+    background-color: #d46f6c;
+}
+
+.accordion-btn {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 5px solid black;
+}
+
+.panel {
+    padding: 0 1rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.arrow {
+    transition: 0.4s;
+}
+
+.rotate {
+    transform: rotate(90deg);
 }
