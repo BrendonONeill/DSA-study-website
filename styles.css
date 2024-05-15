@@ -10,6 +10,9 @@
 }
 
 :root {
+    --main-ui: #0081d4;
+    --main-light-ui: #2cbbff;
+    --main-dark-ui: #042e4d;
     --code-block: #22272f;
     --code-main-colour: white;
     --code-const: #d46f6c;
@@ -43,7 +46,7 @@ button {
 
 
 nav {
-    background-color: purple;
+    background-color: var(--main-ui);
     width: 100vw;
     color: white;
 }
@@ -107,7 +110,7 @@ h2 {
 }
 
 .btn-ds {
-    background-color: aquamarine;
+    background-color: var(--main-light-ui);
 }
 
 .btn-a {
@@ -121,7 +124,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid var(--main-dark-ui);
 }
 
 .panel {

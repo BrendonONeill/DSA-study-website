@@ -3,8 +3,8 @@ const panel = document.getElementsByClassName("panel");
 const arrow = document.getElementsByClassName("arrow")
 const test = ["A","B","C"];
 const arr1 = [1,2,3,4]; 
-test.unshift(...arr1);
-console.log(test)
+arr1.splice(1,2,5);
+console.log(arr1)
 
 for (let i = 0; i < accBtn.length; i++) {
         accBtn[i].addEventListener("click", function () {
