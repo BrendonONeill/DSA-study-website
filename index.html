@@ -170,6 +170,7 @@ arr.splice(1,2,5) // [1,5,4]
                 <pre>
                     <code>
 class Node {
+
     constructor(value) {
     this.value = value
     this.next = null
@@ -184,6 +185,7 @@ class Node {
                 <pre>
                     <code>
 class LinkedList {
+
     constructor() {
         this.head = null
         this.tail = null
@@ -213,6 +215,7 @@ class LinkedList {
                 <pre>
                     <code>
 class LinkedList {
+
     constructor() {
         this.head = null
         this.tail = null
@@ -241,30 +244,362 @@ class LinkedList {
                     </code>
                 </pre>
             </div>
-            <h3>To do</h3>
+
+            <h3>LinkedList InsertAtPos()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-                        Singly LinkedList
+class LinkedList {
 
-                        push()
-                        pop()
-                        insertAt(index)
-                        RemoveFrom(index)
-                        removeNode(value)
-                        indexOf(value)
-                        isEmpty()
-                        lengthOfList()
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
 
-                        Doubly LinkedList
+    InsertAtPos(index, value)
+    {
+        if(index < 0 || index > this.length)
+        {
+            return null
+        }
 
-                        swapValues(value1, value2)
-                        swapNodes(index1,index2)
+        let node = new Node(value)
 
+        if(index === 0)
+        {
+            let temp = this.head
+            node.next = temp
+            this.head = node
+            this.length++
+            return
+        }
 
+        if(index === this.length)
+        {
+                let temp = this.tail
+                temp.next = node
+                this.tail = node
+                this.length++
+                return
+        }
+
+        let curr = this.head
+        let num = 0
+        while(num < index - 1)
+        {
+            curr = curr.next  
+            num++
+        }
+
+        node.next = curr.next
+        curr.next = node
+        this.length++
+        return
+
+    }
+   
+
+    }
                     </code>
                 </pre>
             </div>
+
+            <h3>LinkedList removeFrom()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    removeFrom(index)
+    {
+        if(index < 0 || index > this.length)
+        {
+                return null
+        }
+
+        if(index === 0)
+        {
+            let temp = this.head
+            this.head = temp.next
+            temp.next = null
+            this.length--
+            return temp
+        }
+
+        let num = 0
+        let curr = this.head
+        while(num < index - 1)
+        {
+            curr = curr.next
+            num++
+        }
+
+        if(index === this.length)
+        {
+            let temp = curr.next
+            this.tail = curr
+            curr.next = null
+            this.length--
+            return temp
+        }
+
+        let temp = curr.next
+        curr.next = temp.next
+        temp.next = null
+        this.length--
+        return temp
+    }
+
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>LinkedList removeNode()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    removeNode(value)
+    {
+        
+        if(this.head.val === value)
+        {
+                let temp = this.head
+                this.head = this.head.next
+                temp.next = null
+                this.length--
+                return temp
+        }
+
+        let curr = this.head
+        while(value !== curr.val)
+        {
+            if(!curr.next)
+            {
+                return
+            }
+            if(curr.next.val === value)
+            {
+                break
+            }
+            curr = curr.next   
+        }
+        
+        if(this.tail.val === value)
+        {
+            let temp = curr.next
+            this.tail = curr
+            curr.next = null
+            this.length--
+            return temp
+        }
+
+        let temp = curr.next
+        curr.next = temp.next
+        temp.next = null
+        this.length--
+        return temp
+    }
+
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>LinkedList IndexOf()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    indexOf(value)
+    {
+        if(this.head.val === value)
+        {
+            return 0
+        }
+
+        if(this.tail.val === value)
+        {
+            return this.length - 1
+        }
+
+        let curr = this.head
+        let num = 0
+        while(curr.val !== value)
+        {
+            if(!curr.next)
+            {
+                return
+            }
+            curr = curr.next
+            num++
+        }
+
+        return num
+    }
+
+
+
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>LinkedList isEmpty()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    isEmpty()
+    {
+        if(this.length === 0)
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+
+}
+                    </code>
+                </pre>
+            </div>
+
+            <h3>LinkedList getIndexAt()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    getValueAtIndex(index)
+    {
+        if(index === 0)
+        {
+            return this.head.val
+        }
+
+        if(index === this.length - 1)
+        {
+            return this.tail.val
+        }
+
+        let num = 0
+        let curr = this.head
+
+        while(num < index)
+        {
+            curr = curr.next
+            num++
+        }
+
+        return curr.val
+    }
+
+    
+
+}
+                    </code>
+                </pre>
+            </div>
+
+            <h3>LinkedList getLengthOfList()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    getLengthOfList()
+    {
+        return this.length
+    }
+
+}
+                    </code>
+                </pre>
+            </div>
+
+            <h3>LinkedList reverse()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    reverse()
+    {
+        let temp = this.head
+        this.head = this.tail
+        this.tail = temp
+
+        let prev = null
+        let curr = this.tail
+        let after = this.tail.next
+        curr.next = null
+        while(curr.val !== this.head.val)
+        {
+            prev = curr
+            curr = after
+            if(after.next)
+            {
+                after = after.next
+            }
+            curr.next = prev            
+        }
+    }
+    
+
+}
+                    </code>
+                </pre>
+            </div>
+
+
+
         </div>
 
         <button class="accordion-btn btn-ds">
@@ -272,12 +607,530 @@ class LinkedList {
             <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
         </button>
         <div class="panel">
+            <h3>Node Class</h3>
             <div class="code-block">
                 <pre>
                     <code>
+class Node {
+    constructor(value) {
+        this.val = value
+        this.next = null
+        this.prev
+    }
+}
+                        
                     </code>
                 </pre>
             </div>
+
+            <h3>LinkedList Push()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+                        
+    Push(value){
+        const nodeData = new Node(value)
+        this.length++;
+        if(!this.head)
+        {
+            this.head = nodeData;
+            this.tail = nodeData;
+            return;
+        }
+        else{
+            this.tail.next = nodeData;
+            nodeData.prev = this.tail;
+            this.tail = nodeData;
+            return;
+        }
+    }
+}
+                        
+                    </code>
+                </pre>
+            </div>
+            <h3>LinkedList Pop()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class LinkedList {
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+                        
+    Pop(){
+        if(!this.head){
+            return undefined
+        }
+        let temp = this.head
+        let pre = this.head
+        while( temp.next){
+            pre = temp
+            temp = temp.next
+        }
+        this.tail = pre
+        this.tail.next = null
+        this.length--
+        if(this.length === 0){
+            this.head = null
+            this.tail = null
+        }
+        temp.prev = null
+        return temp
+    }
+}
+                        
+                    </code>
+                </pre>
+            </div>
+
+            <h3>LinkedList insertAtPos()<h3>
+                    <div class="code-block">
+                        <pre>
+                        <code>
+class LinkedList {
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+                            
+    InsertAtPos(index, value)
+    {
+        if(index < 0 || index > this.length)
+        {
+            return null
+        }
+    
+        let node = new Node(value)
+    
+        if(index === 0)
+        {
+            let temp = this.head
+            node.next = temp
+            temp.prev = node
+            this.head = node
+            this.length++
+            return
+        }
+    
+        if(index === this.length)
+        {
+            let temp = this.tail
+            temp.next = node
+            node.prev = temp
+            this.tail = node
+            this.length++
+            return
+        }
+    
+        let curr = this.head
+        let num = 0
+        while(num < index - 1)
+        {
+            curr = curr.next    
+            num++    
+        }
+    
+       node.next = curr.next
+       node.prev = curr
+       node.next.prev = node
+       curr.next = node
+       this.length++
+       return
+   }
+}
+                            
+                        </code>
+                    </pre>
+                    </div>
+
+                    <h3>LinkedList removeFrom()<h3>
+                            <div class="code-block">
+                                <pre>
+    <code>
+class LinkedList {
+    
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    removeFrom(index)
+    {
+        if(index < 0 || index > this.length)
+        {
+                return null
+        }
+
+        if(index === 0)
+        {
+            let temp = this.head
+            this.head = temp.next
+            this.head.prev = null
+            temp.next = null
+            this.length--
+            return temp
+        }
+
+        let num = 0
+        let curr = this.head
+        while(num < index - 1)
+        {
+            curr = curr.next
+            num++
+        }
+
+        if(index === this.length - 1)
+        {
+            let temp = curr.next
+            this.tail = curr
+            curr.next = null
+            temp.prev = null
+            this.length--
+            return temp
+        }
+
+        let temp = curr.next
+        curr.next = temp.next
+        curr.next.prev = curr
+        temp.next = null
+        temp.prev = null
+        this.length--
+        return temp
+    }
+   
+        
+
+}
+        
+                        </code>
+                </pre>
+                            </div>
+                            <h3>LinkedList removeNode()<h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    removeNode(value)
+    {
+        
+        if(this.head.val === value)
+        {
+                let temp = this.head
+                this.head = this.head.next
+                this.head.prev = null
+                temp.next = null
+                this.length--
+                return temp
+        }
+
+        let curr = this.head
+        while(value !== curr.val)
+        {
+            if(!curr.next)
+            {
+                return
+            }
+            if(curr.next.val === value)
+            {
+                break
+            }
+            curr = curr.next   
+        }
+        
+        if(this.tail.val === value)
+        {
+            let temp = curr.next
+            this.tail = curr
+            curr.next = null
+            temp.prev = null
+            this.length--
+            return temp
+        }
+
+        let temp = curr.next
+        curr.next = temp.next
+        curr.next.prev = curr
+        temp.next = null
+        temp.prev = null
+        this.length--
+        return temp
+    }
+
+
+
+}
+
+                    </code>
+            </pre>
+                                    </div>
+                                    <h3>LinkedList IndexOf()</h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    indexOf(value)
+    {
+        if(this.head.val === value)
+        {
+            return 0
+        }
+
+        if(this.tail.val === value)
+        {
+            return this.length - 1
+        }
+
+        let curr = this.head
+        let num = 0
+        while(curr.val !== value)
+        {
+            if(!curr.next)
+            {
+                return
+            }
+            curr = curr.next
+            num++
+        }
+        return num
+    }
+}
+                    </code>
+                </pre>
+                                    </div>
+                                    <h3>LinkedList isEmpty()</h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    isEmpty()
+    {
+        if(this.length === 0)
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+
+}
+                    </code>
+                </pre>
+                                    </div>
+
+                                    <h3>LinkedList getIndexAt()</h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    getValueAtIndex(index)
+    {
+        if(index === 0)
+        {
+            return this.head.val
+        }
+
+        if(index === this.length - 1)
+        {
+            return this.tail.val
+        }
+
+        let num = 0
+        let curr = this.head
+
+        while(num < index)
+        {
+            curr = curr.next
+            num++
+        }
+
+        return curr.val
+    }
+
+    
+
+}
+                    </code>
+                </pre>
+                                    </div>
+
+                                    <h3>LinkedList getLengthOfList()</h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    getLengthOfList()
+    {
+        return this.length
+    }
+
+}
+                    </code>
+                </pre>
+                                    </div>
+                                    <h3>LinkedList getLengthOfList()</h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    reverse()
+    {
+        let temp = this.head
+        this.head = this.tail
+        this.tail = temp
+
+        let last = null
+        let curr = this.tail
+        let after = this.tail.next
+        curr.next = after
+        while(curr.val !== this.head.val)
+        {
+            last = curr
+            curr = after
+            if(after.next)
+            {
+                after = after.next
+            }
+            curr.next = last
+            if(after)
+            {
+                curr.prev = after 
+            }           
+        }
+
+        curr.prev = null
+    }
+
+
+}
+                    </code>
+                </pre>
+                                    </div>
+                                    <h3>LinkedList swapValues()</h3>
+                                    <div class="code-block">
+                                        <pre>
+                    <code>
+class LinkedList {
+
+    constructor() {
+        this.head = null
+        this.tail = null
+        this.length = 0
+    }
+
+    swapValues(value1, value2)
+    {
+        let node1 = null
+        let node2 = null
+        if(this.head.val === value1)
+        {
+            node1 = this.head
+        }
+        if(this.head.val === value2)
+        {
+            node2 = this.head
+        }
+        if(this.tail.val === value1)
+        {
+            node1 = this.tail
+        }
+        if(this.tail.val === value2)
+        {
+            node2 = this.tail
+        }
+
+        if(node1 === null || node2 === null)
+        {
+            let curr = this.head
+            while(curr.val !== value1)
+            {
+                if(!curr.next)
+                {
+                    return undefined
+                }
+                curr = curr.next
+            }
+            node1 = curr
+            curr = this.head
+            while(curr.val !== value2)
+            {
+                    if(!curr.next)
+                    {
+                        return undefined
+                    }
+                    curr = curr.next
+            }
+            node2 = curr
+        }
+
+        let temp = node1.val
+        node1.val = node2.val
+        node2.val = temp
+    }
+
+    
+
+
+}
+                    </code>
+                </pre>
+                                    </div>
+
+
         </div>
 
         <button class="accordion-btn btn-ds">
@@ -285,16 +1138,100 @@ class LinkedList {
             <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
         </button>
         <div class="panel">
+            <h3>Push()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-                        Push()
-                        Pop()
-                        Peek()
-                        isEmpty()
+class Stack {
+
+    constructor()
+    {
+        this.items = [];
+    }
+
+    push(value)
+    {
+        this.items.push(value)
+    }
+}
                     </code>
                 </pre>
             </div>
+
+            <h3>Pop()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class Stack {
+
+    constructor()
+    {
+        this.items = [];
+    }
+                        
+    pop()
+    {
+        if(ths.items === 0)
+        {
+            return null
+        }
+        return this.items.pop()
+    }
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>Peek()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class Stack {
+
+    constructor()
+    {
+        this.items = [];
+    }
+                        
+    Peek()
+    {
+        if(this.items.length() === 0)
+        {
+            return null;
+        }
+        return this.items[this.items.length()];
+    }
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>IsEmpty()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class Queue {
+
+    constructor()
+    {
+        this.items = [];
+    }
+                        
+    isEmpty()
+    {
+        if(this.items.length < 1)
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+}
+                    </code>
+                </pre>
+            </div>
+
+
         </div>
 
         <button class="accordion-btn btn-ds">
@@ -302,13 +1239,88 @@ class LinkedList {
             <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
         </button>
         <div class="panel">
+            <h3>Enqueue()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-                        enqueue()
-                        dequeue()
-                        peek()
-                        isEmpty()
+class Queue {
+    
+    constructor()
+    {
+        this.items = [];
+    }
+                                                
+    enqueue(value)
+    {
+        return this.items.push(value);
+    }
+}
+                    </code>
+                </pre>
+            </div>
+
+            <h3>Dequeue()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class Queue {
+    
+    constructor()
+    {
+        this.items = [];
+    }
+                                                
+    dequeue()
+    {
+        return this.items.shift();
+    }
+}
+                    </code>
+                </pre>
+            </div>
+
+            <h3>Peek()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class Queue {
+
+    constructor()
+    {
+        this.items = [];
+    }
+                                                
+    Peek()
+    {
+        return this.items[0]
+    }
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>isEmpty()</h3>
+            <div class="code-block">
+                <pre>
+                    <code>
+class Queue {
+    
+    constructor()
+    {
+        this.items = [];
+    }
+                                                
+    isEmpty()
+    {
+        if(this.items.length < 1)
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+}
                     </code>
                 </pre>
             </div>
@@ -414,9 +1426,21 @@ class LinkedList {
             <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
         </button>
         <div class="panel">
+            <h3>To do</h3>
             <div class="code-block">
                 <pre>
                     <code>
+
+
+
+Doubly LinkedList
+
+
+
+swapValues(value1, value2)
+swapNodes(index1,index2)
+
+
                     </code>
                 </pre>
             </div>

@@ -28,8 +28,9 @@ for (let i = 0; i < accBtn.length; i++) {
 
 class Node {
     constructor(value) {
-        this.value = value
+        this.val = value
         this.next = null
+        this.prev
     }
 }
 
@@ -53,6 +54,7 @@ class LinkedList {
         }
         else{
             this.tail.next = nodeData;
+            nodeData.prev = this.tail;
             this.tail = nodeData;
             return;
         }
@@ -75,43 +77,23 @@ class LinkedList {
             this.head = null
             this.tail = null
         }
+        temp.prev = null
         return temp
     }
 
-    Unshift(value){
-        const nodeData = new Node(value)
-        if(!this.head){
-            this.head = nodeData;
-            this.tail = nodeData;
-        }
-        else{
-            nodeData.next = this.head;
-            this.head = nodeData;
-        }
-        this.length++
-        return
-    }
+    
+    
+   
 
-    Shift(){
-        if(!this.head){
-            return undefined
-        }
-        let temp = this.head
-        this.head = this.head.next
-        temp.next = null
-        this.length--
-        if(this.length === 0){
-            this.tail = null
-        }
-        return temp
-    }
+    
+    
 
 }
 
     let cat = new LinkedList()
 
     cat.Push(4)
-    cat.Push(5)
-    cat.Unshift(13)
-    cat.Shift()
+    cat.Push(3)
+    cat.Push(2)
+    cat.Push(1)
     console.log(cat)
