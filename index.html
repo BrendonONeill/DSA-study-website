@@ -184,118 +184,121 @@ class Node {
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
                         
-    Push(value){
-        const nodeData = new Node(value)
-        this.length++;
-        if(!this.head){
-            this.head = nodeData;
-            this.tail = nodeData;
-            return;
+    <span class="const">Push</span>(<span class="data">value</span>){
+        <span class="const">const</span> nodeData <span class="new">=</span> <span class="new">new</span> Node(<span class="data">value</span>)
+        <span class="const">this</span>.length++;
+        <span class="const">if</span>(!<span class="const">this</span>.head){
+            <span class="const">this</span>.head <span class="new">=</span> nodeData;
+            <span class="const">this</span>.tail <span class="new">=</span> nodeData;
+            <span class="new">return</span>;
         }
-        else{
-                this.tail.next = nodeData;
-                this.tail = nodeData;
-                return;
+        <span class="const">else</span>{
+                <span class="const">this</span>.tail.next <span class="new">=</span> nodeData;
+                <span class="const">this</span>.tail <span class="new">=</span> nodeData;
+                <span class="new">return</span>;
         }
     }
 }
                     </code>
                 </pre>
+
             </div>
             <h3>LinkedList Pop()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    Pop(){
-        if(!this.head){
-            return undefined
+    <span class="const">Pop</span>(){
+        <span class="const">if</span>(!<span class="const">this</span>.head){
+            <span class="new">return</span> <span class="data">undefined</span>
         }
-        let temp = this.head
-        let pre = this.head
-        while( temp.next){
-            pre = temp
-            temp = temp.next
+        <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">let</span> pre <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">while</span>( temp.next){
+            pre <span class="new">=</span> temp
+            temp <span class="new">=</span> temp.next
         }
-        this.tail = pre
-        this.tail.next = null
-        this.length--
-        if(this.length === 0){
-            this.head = null
-            this.tail = null
+        <span class="const">this</span>.tail <span class="new">=</span> pre
+        <span class="const">this</span>.tail.next <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length--
+        <span class="const">if</span>(<span class="const">this</span>.length <span class="new">===</span> <span class="data">0</span>){
+            <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+            <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
         }
-        return temp
+        <span class="new">return</span> temp
     }
+}
                     </code>
                 </pre>
+
             </div>
 
             <h3>LinkedList InsertAtPos()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    InsertAtPos(index, value)
+    <span class="const">InsertAtPos</span>(<span class="data">index</span>, <span class="data">value</span>)
     {
-        if(index < 0 || index > this.length)
+        <span class="const">if</span>(<span class="data">index</span> < <span class="data">0</span> || <span class="data">index</span> > <span class="const">this</span>.length)
         {
-            return null
+            <span class="new">return</span> <span class="data">null</span>
         }
 
-        let node = new Node(value)
+        <span class="const">let</span> node <span class="new">=</span> <span class="new">new</span> Node(<span class="data">value</span>)
 
-        if(index === 0)
+        <span class="const">if</span>(<span class="data">index</span> <span class="new">===</span> <span class="data">0</span>)
         {
-            let temp = this.head
-            node.next = temp
-            this.head = node
-            this.length++
-            return
+            <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.head
+            node.next <span class="new">=</span> temp
+            <span class="const">this</span>.head <span class="new">=</span> node
+            <span class="const">this</span>.length++
+            <span class="new">return</span>
         }
 
-        if(index === this.length)
+        <span class="const">if</span>(<span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length)
         {
-                let temp = this.tail
-                temp.next = node
-                this.tail = node
-                this.length++
-                return
+                <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.tail
+                temp.next <span class="new">=</span> node
+                <span class="const">this</span>.tail <span class="new">=</span> node
+                <span class="const">this</span>.length++
+                <span class="new">return</span>
         }
 
-        let curr = this.head
-        let num = 0
-        while(num < index - 1)
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
+        <span class="const">while</span>(num < <span class="data">index</span> <span class="new">-</span> <span class="data">1</span>)
         {
-            curr = curr.next  
+            curr <span class="new">=</span> curr.next  
             num++
         }
 
-        node.next = curr.next
-        curr.next = node
-        this.length++
-        return
+        node.next <span class="new">=</span> curr.next
+        curr.next <span class="new">=</span> node
+        <span class="const">this</span>.length++
+        <span class="new">return</span>
 
     }
    
@@ -303,237 +306,242 @@ class LinkedList {
     }
                     </code>
                 </pre>
+
             </div>
 
             <h3>LinkedList removeFrom()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    removeFrom(index)
+    <span class="const">removeFrom</span>(<span class="data">index</span>)
     {
-        if(index < 0 || index > this.length)
+        <span class="const">if</span>(<span class="data">index</span> < <span class="data">0</span> || <span class="data">index</span> > <span class="const">this</span>.length)
         {
-                return null
+                <span class="new">return</span> <span class="data">null</span>
         }
 
-        if(index === 0)
+        <span class="const">if</span>(<span class="data">index</span> <span class="new">===</span> <span class="data">0</span>)
         {
-            let temp = this.head
-            this.head = temp.next
-            temp.next = null
-            this.length--
-            return temp
+            <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.head
+            <span class="const">this</span>.head <span class="new">=</span> temp.next
+            temp.next <span class="new">=</span> <span class="data">null</span>
+            <span class="const">this</span>.length--
+            <span class="new">return</span> temp
         }
 
-        let num = 0
-        let curr = this.head
-        while(num < index - 1)
+        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">while</span>(num < <span class="data">index</span> <span class="new">-</span> <span class="data">1</span>)
         {
-            curr = curr.next
+            curr <span class="new">=</span> curr.next
             num++
         }
 
-        if(index === this.length)
+        <span class="const">if</span>(<span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length)
         {
-            let temp = curr.next
-            this.tail = curr
-            curr.next = null
-            this.length--
-            return temp
+            <span class="const">let</span> temp <span class="new">=</span> curr.next
+            <span class="const">this</span>.tail <span class="new">=</span> curr
+            curr.next <span class="new">=</span> <span class="data">null</span>
+            <span class="const">this</span>.length--
+            <span class="new">return</span> temp
         }
 
-        let temp = curr.next
-        curr.next = temp.next
-        temp.next = null
-        this.length--
-        return temp
+        <span class="const">let</span> temp <span class="new">=</span> curr.next
+        curr.next <span class="new">=</span> temp.next
+        temp.next <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length--
+        <span class="new">return</span> temp
     }
 
 }
                     </code>
                 </pre>
+
             </div>
             <h3>LinkedList removeNode()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    removeNode(value)
+    <span class="const">removeNode</span>(<span class="data">value</span>)
     {
         
-        if(this.head.val === value)
+        <span class="const">if</span>(<span class="const">this</span>.head.val <span class="new">===</span> <span class="data">value</span>)
         {
-                let temp = this.head
-                this.head = this.head.next
-                temp.next = null
-                this.length--
-                return temp
+                <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.head
+                <span class="const">this</span>.head <span class="new">=</span> <span class="const">this</span>.head.next
+                temp.next <span class="new">=</span> <span class="data">null</span>
+                <span class="const">this</span>.length--
+                <span class="new">return</span> temp
         }
 
-        let curr = this.head
-        while(value !== curr.val)
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">while</span>(<span class="data">value</span> <span class="new">!==</span> curr.val)
         {
-            if(!curr.next)
+            <span class="const">if</span>(!curr.next)
             {
-                return
+                <span class="new">return</span>
             }
-            if(curr.next.val === value)
+            <span class="const">if</span>(curr.next.val <span class="new">===</span> <span class="data">value</span>)
             {
-                break
+                <span class="const">break</span>
             }
-            curr = curr.next   
+            curr <span class="new">=</span> curr.next   
         }
         
-        if(this.tail.val === value)
+        <span class="const">if</span>(<span class="const">this</span>.tail.val <span class="new">===</span> <span class="data">value</span>)
         {
-            let temp = curr.next
-            this.tail = curr
-            curr.next = null
-            this.length--
-            return temp
+            <span class="const">let</span> temp <span class="new">=</span> curr.next
+            <span class="const">this</span>.tail <span class="new">=</span> curr
+            curr.next <span class="new">=</span> <span class="data">null</span>
+            <span class="const">this</span>.length--
+            <span class="new">return</span> temp
         }
 
-        let temp = curr.next
-        curr.next = temp.next
-        temp.next = null
-        this.length--
-        return temp
+        <span class="const">let</span> temp <span class="new">=</span> curr.next
+        curr.next <span class="new">=</span> temp.next
+        temp.next <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length--
+        <span class="new">return</span> temp
     }
 
 }
                     </code>
                 </pre>
+
             </div>
             <h3>LinkedList IndexOf()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    indexOf(value)
+    <span class="const">indexOf</span>(<span class="data">value</span>)
     {
-        if(this.head.val === value)
+        <span class="const">if</span>(<span class="const">this</span>.head.val <span class="new">===</span> <span class="data">value</span>)
         {
-            return 0
+            <span class="new">return</span> <span class="data">0</span>
         }
 
-        if(this.tail.val === value)
+        <span class="const">if</span>(<span class="const">this</span>.tail.val <span class="new">===</span> <span class="data">value</span>)
         {
-            return this.length - 1
+            <span class="new">return</span> <span class="const">this</span>.length <span class="new">-</span> <span class="data">1</span>
         }
 
-        let curr = this.head
-        let num = 0
-        while(curr.val !== value)
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
+        <span class="const">while</span>(curr.val <span class="new">!==</span> <span class="data">value</span>)
         {
-            if(!curr.next)
+            <span class="const">if</span>(!curr.next)
             {
-                return
+                <span class="new">return</span>
             }
-            curr = curr.next
+            curr <span class="new">=</span> curr.next
             num++
         }
 
-        return num
+        <span class="new">return</span> num
     }
-
-
-
 }
                     </code>
                 </pre>
+
+
             </div>
             <h3>LinkedList isEmpty()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    isEmpty()
+    <span class="const">isEmpty</span>()
     {
-        if(this.length === 0)
+        if(<span class="const">this</span>.length <span class="new">===</span> <span class="data">0</span>)
         {
-            return true
+            <span class="new">return</span> <span class="data">true</span>
         }
         else
         {
-            return false
+            <span class="new">return</span> <span class="data">false</span>
         }
     }
 
 }
                     </code>
                 </pre>
+
             </div>
 
             <h3>LinkedList getIndexAt()</h3>
             <div class="code-block">
                 <pre>
                     <code>
-class LinkedList {
-
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
-    }
-
-    getValueAtIndex(index)
-    {
-        if(index === 0)
-        {
-            return this.head.val
-        }
-
-        if(index === this.length - 1)
-        {
-            return this.tail.val
-        }
-
-        let num = 0
-        let curr = this.head
-
-        while(num < index)
-        {
-            curr = curr.next
-            num++
-        }
-
-        return curr.val
-    }
-
-    
-
-}
+                <span class="const">class</span> LinkedList <span class="ds">{</span>
+                
+                    <span class="const">constructor</span><span class="ds">(</span><span class="ds">)</span> <span class="ds">{</span>
+                        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+                        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+                        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
+                    <span class="ds">}</span>
+                
+                    <span class="const">getValueAtIndex</span><span class="ds">(</span><span class="data">index</span><span class="ds">)</span>
+                    <span class="ds">{</span>
+                        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="data">0</span><span class="ds">)</span>
+                        <span class="ds">{</span>
+                            <span class="new">return</span> <span class="const">this</span>.head.val
+                        <span class="ds">}</span>
+                
+                        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length - <span class="data">1</span><span class="ds">)</span>
+                        <span class="ds">{</span>
+                            <span class="new">return</span> <span class="const">this</span>.tail.val
+                        <span class="ds">}</span>
+                
+                        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
+                        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+                
+                        <span class="const">while</span><span class="ds">(</span>num < <span class="data">index</span><span class="ds">)</span>
+                        <span class="ds">{</span>
+                            curr <span class="new">=</span> curr.next
+                            num++
+                        <span class="ds">}</span>
+                
+                        <span class="new">return</span> curr.val
+                    <span class="ds">}</span>
+                
+                <span class="ds">}</span>
                     </code>
                 </pre>
+
+
+
+
             </div>
 
             <h3>LinkedList getLengthOfList()</h3>

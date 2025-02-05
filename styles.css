@@ -15,11 +15,12 @@
     --main-dark-ui: #042e4d;
     --code-block: #22272f;
     --code-main-colour: white;
-    --code-const: #d46f6c;
+    --code-const: #66d9ef;
     --data-structure: orange;
     --function: violet;
     --comments: grey;
     --data: greenyellow;
+    --new: #ff4689;
 }
 
 body {
@@ -96,6 +97,10 @@ pre code {
 
 .data {
     color: var(--data)
+}
+
+.new {
+    color: var(--new);
 }
 
 .example {
