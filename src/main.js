@@ -19,13 +19,6 @@ for (let i = 0; i < accBtn.length; i++) {
 }
 
 
-
-
-
-
-
-
-
 class Node {
     constructor(value) {
         this.val = value
@@ -33,7 +26,6 @@ class Node {
         this.prev
     }
 }
-
 
 
 class LinkedList {
