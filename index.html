@@ -8,8 +8,8 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="module" crossorigin src="/DSA-study-website/assets/index-BFJEdrHz.js"></script>
-  <link rel="stylesheet" crossorigin href="/DSA-study-website/assets/index-Bd5thU3V.css">
+  <script type="module" crossorigin src="/DSA-study-website/assets/index-Bh0v7r-J.js"></script>
+  <link rel="stylesheet" crossorigin href="/DSA-study-website/assets/index-CdKh60jP.css">
 </head>
 
 <body>
@@ -34,130 +34,182 @@
         <div class="panel">
             <h3>Creating Arrays</h3>
             <p>About array</p>
-            <div class="code-block">
-                <pre>
-                    <code>
-// Creating an empty array
-const arr = [];
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
+                        <code>
+    <span class="com">// Creating an empty array</span>
+    <span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="ds">]</span>;
+    
+    <span class="com">// Create an empty array with a set length</span>
+    <span class="const">const</span> arr2 <span class="new">=</span> <span class="new">new</span> Array<span class="ds">(</span><span class="data">5</span><span class="ds">)</span>;
+    
+    <span class="com">// Create an array with values</span>
+    <span class="const">const</span> arr3 <span class="new">=</span> <span class="ds">[</span><span class="data">"A"</span>,<span class="data">"B"</span>,<span class="data">"C"</span><span class="ds">]</span>;
+                        </code>
+                    </pre>
 
-// Create an empty array with a set length
-const arr2 = new Array(5);
-
-// Create an array with values
-const arr3 = ["A","B","C"];
-                    </code>
-                </pre>
+                </div>
             </div>
             <h3>Array.push()</h3>
             <p>array pushing</p>
-            <div class="code-block">
-                <pre>
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
                         <code>
-const arr = ["A","B","C"];
-const arr2 = [1,2,3]
+<span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="data">"A"</span>,<span class="data">"B"</span>,<span class="data">"C"</span><span class="ds">]</span>;
+<span class="const">const</span> arr2 <span class="new">=</span> <span class="ds">[</span><span class="data">1</span>,<span class="data">2</span>,<span class="data">3</span><span class="ds">]</span>
     
-// Pushing D onto the end of the array
-arr.push("D"); // ["A","B","C","D"]
+<span class="com">// Pushing D onto the end of the array</span>
+arr.push<span class="ds">(</span><span class="data">"D"</span><span class="ds">)</span>; <span class="com">// ["A","B","C","D"]</span>
 
-arr2.push(4,5,6); // [1,2,3,4,5,6]
-
-// You can also use the spread operator
-arr.push(...arr2) // ["A","B","C",1,2,3]
-                             </code>
+arr2.push<span class="ds">(</span><span class="data">4</span>,<span class="data">5</span>,<span class="data">6</span><span class="ds">)</span>; <span class="com">// [1,2,3,4,5,6]</span>
+    
+<span class="com">// You can also use the spread operator</span>
+arr.push<span class="ds">(</span>...arr2<span class="ds">)</span> <span class="com">// ["A","B","C",1,2,3]</span>
+                        </code>
                     </pre>
+
+                </div>
             </div>
 
             <h3>Array.pop()</h3>
             <p>array poping</p>
-            <div class="code-block">
-                <pre>
-                        <code>
-const arr = ["A","B","C"];
-const arr2 = [1,2,3]
-    
-// Popping removes the last element of an 
-// array
-arr.pop();  // ["A","B"]
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
+                    <code>
+<span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="data">"A"</span>,<span class="data">"B"</span>,<span class="data">"C"</span><span class="ds">]</span>;
+<span class="const">const</span> arr2 <span class="new">=</span> <span class="ds">[</span><span class="data">1</span>,<span class="data">2</span>,<span class="data">3</span><span class="ds">]</span>
 
-// When popping you can return the popped 
-// value
-const a = arr.pop()
-console.log(a) // "C"
-                             </code>
-                    </pre>
+<span class="com">// Popping removes the last element of an </span>
+<span class="com">// array</span>
+arr.pop<span class="ds">(</span><span class="ds">)</span>;  <span class="com">// ["A","B"]</span>
+
+<span class="com">// When popping you can return the popped </span>
+<span class="com">// value</span>
+<span class="const">const</span> a <span class="new">=</span> arr.pop<span class="ds">(</span><span class="ds">)</span>
+console.log<span class="ds">(</span>a<span class="ds">)</span> <span class="com">// "C"</span>
+                    </code>
+                </pre>
+
+                </div>
             </div>
 
             <h3>Array.Shift()</h3>
             <p>array shift</p>
-            <div class="code-block">
-                <pre>
-                        <code>
-const arr = ["A","B","C"];
-    
-// shifting removes the first element of 
-// an arr
-arr.shift(); // ["B","C"]
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
+                    <code>
+<span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="data">"A"</span>,<span class="data">"B"</span>,<span class="data">"C"</span><span class="ds">]</span>;
 
-// When shifting you can return the shifted 
-// value
-const a = arr.shift()
-console.log(a) // "A"
-                             </code>
-                    </pre>
+<span class="com">// shifting removes the first element of </span>
+<span class="com">// an arr</span>
+arr.shift<span class="ds">(</span><span class="ds">)</span>; <span class="com">// ["B","C"]</span>
+
+<span class="com">// When shifting you can return the shifted </span>
+<span class="com">// value</span>
+<span class="const">const</span> a <span class="new">=</span> arr.shift<span class="ds">(</span><span class="ds">)</span>
+console.log<span class="ds">(</span>a<span class="ds">)</span> <span class="com">// "A"</span>
+                    </code>
+                </pre>
+
+                </div>
             </div>
 
             <h3>Array.Unshift()</h3>
             <p>array shift</p>
-            <div class="code-block">
-                <pre>
-                        <code>
-const arr = ["A","B","C"];
-const arr2 = [1,2,3];
-                                
-// Pushing D onto the end of the array
-arr.unshift("D"); ["D","A","B","C"]
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
+                    <code>
+<span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="data">"A"</span>,<span class="data">"B"</span>,<span class="data">"C"</span><span class="ds">]</span>;
+<span class="const">const</span> arr2 <span class="new">=</span> <span class="ds">[</span><span class="data">1</span>,<span class="data">2</span>,<span class="data">3</span><span class="ds">]</span>;
                             
-arr2.unshift(4,5); // [4,5,1,2,3]
-                            
-// You can also use the spread operator
-arr.unshift(...arr2) // [1,2,3,"A","B","C"]
-                             </code>
-                    </pre>
+<span class="com">// Pushing D onto the end of the array</span>
+arr.unshift<span class="ds">(</span><span class="data">"D"</span><span class="ds">)</span>; <span class="ds">[</span><span class="data">"D"</span>,<span class="data">"A"</span>,<span class="data">"B"</span>,<span class="data">"C"</span><span class="ds">]</span>
+                        
+arr2.unshift<span class="ds">(</span><span class="data">4</span>,<span class="data">5</span><span class="ds">)</span>; <span class="com">// [4,5,1,2,3]</span>
+                        
+<span class="com">// You can also use the spread operator</span>
+arr.unshift<span class="ds">(</span><span class="new">...</span>arr2<span class="ds">)</span> <span class="com">// [1,2,3,"A","B","C"]</span>
+                    </code>
+                </pre>
+
+                </div>
             </div>
 
             <h3>Array.Slice()</h3>
             <p>array slice</p>
-            <div class="code-block">
-                <pre>
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
                     <code>
-const arr = ["A", "B", "C"]
+<span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="data">"A"</span>, <span class="data">"B"</span>, <span class="data">"C"</span><span class="ds">]</span>
 
-arr.slice(2) // ["C"]
+arr.slice<span class="ds">(</span><span class="data">2</span><span class="ds">)</span> <span class="com">// ["C"]</span>
 
-arr.slice(1,2) // ["B","C"];
+arr.slice<span class="ds">(</span><span class="data">1</span>,<span class="data">2</span><span class="ds">)</span> <span class="com">// ["B","C"];</span>
                     </code>
                 </pre>
+
+                </div>
             </div>
 
             <h3>Array.Splice()</h3>
             <p>array splice</p>
-            <div class="code-block">
-                <pre>
+            <div class="ui">
+                <div class="ui-flex">
+                    <div class="ui-red"></div>
+                    <div class="ui-yellow"></div>
+                    <div class="ui-green"></div>
+                </div>
+                <div class="code-block">
+                    <pre>
                     <code>
-const arr = [1,2,3,4]
+<span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="data">1</span>,<span class="data">2</span>,<span class="data">3</span>,<span class="data">4</span><span class="ds">]</span>
 
-// This is go to the index at 1 and delete 
-// 0 values and place 5 within the array
+<span class="com">// This will go to the index at 1 and delete </span>
+<span class="com">// 0 values and place 5 within the array</span>
+arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data">0</span>,<span class="data">5</span><span class="ds">)</span> <span class="com">// [1,5,2,3,4]</span>
 
-arr.splice(1,0,5) // [1,5,2,3,4]
-
-// Here we replace 2,3 with 5
-
-arr.splice(1,2,5) // [1,5,4]
+<span class="com">// Here we replace 2,3 with 5</span>
+arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data">2</span>,<span class="data">5</span><span class="ds">)</span> <span class="com">// [1,5,4]</span>
                     </code>
                 </pre>
+                </div>
             </div>
-
         </div>
 
         <button class="accordion-btn btn-ds">
