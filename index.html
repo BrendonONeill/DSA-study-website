@@ -3,39 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./src/style.css">
-  <script src="./src/main.js" async defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="/src/main.js" async defer></script>
 </head>
 
 <body>
-  <nav>
-    <div class="mobile-nav">
-      <div>
-        <button class="burger-btn"><img src="burger.svg" height="25" width="25" alt=""></button>
-      </div>
-      <div>
-        <h1>Data & Algos</h1>
-      </div>
-    </div>
-    <div class="main-nav">
+    <nav>
+        <div class="mobile-nav">
+            <div>
+                <button class="burger-btn"><img src="burger.svg" height="25" width="25" alt=""></button>
+            </div>
+            <div>
+                <h1>Data & Algos</h1>
+            </div>
+        </div>
+        <div class="main-nav">
 
-    </div>
-  </nav>
-  <main>
-    <button class="accordion-btn btn-ds">
-      <h2>Array</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <h3>Creating Arrays</h3>
-      <p>About array</p>
-      <div class="code-block">
-        <pre>
+        </div>
+    </nav>
+    <main>
+        <button class="accordion-btn btn-ds">
+            <h2>Array</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>Creating Arrays</h3>
+            <p>About array</p>
+            <div class="code-block">
+                <pre>
                     <code>
 // Creating an empty array
 const arr = [];
@@ -47,11 +47,11 @@ const arr2 = new Array(5);
 const arr3 = ["A","B","C"];
                     </code>
                 </pre>
-      </div>
-      <h3>Array.push()</h3>
-      <p>array pushing</p>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>Array.push()</h3>
+            <p>array pushing</p>
+            <div class="code-block">
+                <pre>
                         <code>
 const arr = ["A","B","C"];
 const arr2 = [1,2,3]
@@ -65,12 +65,12 @@ arr2.push(4,5,6); // [1,2,3,4,5,6]
 arr.push(...arr2) // ["A","B","C",1,2,3]
                              </code>
                     </pre>
-      </div>
+            </div>
 
-      <h3>Array.pop()</h3>
-      <p>array poping</p>
-      <div class="code-block">
-        <pre>
+            <h3>Array.pop()</h3>
+            <p>array poping</p>
+            <div class="code-block">
+                <pre>
                         <code>
 const arr = ["A","B","C"];
 const arr2 = [1,2,3]
@@ -85,12 +85,12 @@ const a = arr.pop()
 console.log(a) // "C"
                              </code>
                     </pre>
-      </div>
+            </div>
 
-      <h3>Array.Shift()</h3>
-      <p>array shift</p>
-      <div class="code-block">
-        <pre>
+            <h3>Array.Shift()</h3>
+            <p>array shift</p>
+            <div class="code-block">
+                <pre>
                         <code>
 const arr = ["A","B","C"];
     
@@ -104,12 +104,12 @@ const a = arr.shift()
 console.log(a) // "A"
                              </code>
                     </pre>
-      </div>
+            </div>
 
-      <h3>Array.Unshift()</h3>
-      <p>array shift</p>
-      <div class="code-block">
-        <pre>
+            <h3>Array.Unshift()</h3>
+            <p>array shift</p>
+            <div class="code-block">
+                <pre>
                         <code>
 const arr = ["A","B","C"];
 const arr2 = [1,2,3];
@@ -123,12 +123,12 @@ arr2.unshift(4,5); // [4,5,1,2,3]
 arr.unshift(...arr2) // [1,2,3,"A","B","C"]
                              </code>
                     </pre>
-      </div>
+            </div>
 
-      <h3>Array.Slice()</h3>
-      <p>array slice</p>
-      <div class="code-block">
-        <pre>
+            <h3>Array.Slice()</h3>
+            <p>array slice</p>
+            <div class="code-block">
+                <pre>
                     <code>
 const arr = ["A", "B", "C"]
 
@@ -137,12 +137,12 @@ arr.slice(2) // ["C"]
 arr.slice(1,2) // ["B","C"];
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>Array.Splice()</h3>
-      <p>array splice</p>
-      <div class="code-block">
-        <pre>
+            <h3>Array.Splice()</h3>
+            <p>array splice</p>
+            <div class="code-block">
+                <pre>
                     <code>
 const arr = [1,2,3,4]
 
@@ -156,18 +156,18 @@ arr.splice(1,0,5) // [1,5,2,3,4]
 arr.splice(1,2,5) // [1,5,4]
                     </code>
                 </pre>
-      </div>
+            </div>
 
-    </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Singly Linked List</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <h3>Node class</h3>
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Singly Linked List</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>Node class</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Node {
 
@@ -178,11 +178,11 @@ class Node {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>LinkedList Push()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList Push()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -210,10 +210,10 @@ class Node {
                     </code>
                 </pre>
 
-      </div>
-      <h3>LinkedList Pop()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>LinkedList Pop()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -246,11 +246,11 @@ class Node {
                     </code>
                 </pre>
 
-      </div>
+            </div>
 
-      <h3>LinkedList InsertAtPos()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList InsertAtPos()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -307,11 +307,11 @@ class Node {
                     </code>
                 </pre>
 
-      </div>
+            </div>
 
-      <h3>LinkedList removeFrom()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList removeFrom()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -365,10 +365,10 @@ class Node {
                     </code>
                 </pre>
 
-      </div>
-      <h3>LinkedList removeNode()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>LinkedList removeNode()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -424,10 +424,10 @@ class Node {
                     </code>
                 </pre>
 
-      </div>
-      <h3>LinkedList IndexOf()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>LinkedList IndexOf()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -468,10 +468,10 @@ class Node {
                 </pre>
 
 
-      </div>
-      <h3>LinkedList isEmpty()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>LinkedList isEmpty()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -497,11 +497,11 @@ class Node {
                     </code>
                 </pre>
 
-      </div>
+            </div>
 
-      <h3>LinkedList getIndexAt()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList getIndexAt()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
                 <span class="const">class</span> LinkedList <span class="ds">{</span>
                 
@@ -542,11 +542,11 @@ class Node {
 
 
 
-      </div>
+            </div>
 
-      <h3>LinkedList getLengthOfList()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList getLengthOfList()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class LinkedList {
 
@@ -564,11 +564,11 @@ class LinkedList {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>LinkedList reverse()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList reverse()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class LinkedList {
 
@@ -604,20 +604,20 @@ class LinkedList {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
 
 
-    </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Doubly Linked List</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <h3>Node Class</h3>
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Doubly Linked List</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>Node Class</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Node {
     constructor(value) {
@@ -629,11 +629,11 @@ class Node {
                         
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>LinkedList Push()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>LinkedList Push()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class LinkedList {
     constructor() {
@@ -662,10 +662,10 @@ class LinkedList {
                         
                     </code>
                 </pre>
-      </div>
-      <h3>LinkedList Pop()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>LinkedList Pop()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class LinkedList {
     constructor() {
@@ -698,11 +698,11 @@ class LinkedList {
                         
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>LinkedList insertAtPos()<h3>
-          <div class="code-block">
-            <pre>
+            <h3>LinkedList insertAtPos()<h3>
+                    <div class="code-block">
+                        <pre>
                         <code>
 class LinkedList {
     constructor() {
@@ -759,11 +759,11 @@ class LinkedList {
                             
                         </code>
                     </pre>
-          </div>
+                    </div>
 
-          <h3>LinkedList removeFrom()<h3>
-              <div class="code-block">
-                <pre>
+                    <h3>LinkedList removeFrom()<h3>
+                            <div class="code-block">
+                                <pre>
     <code>
 class LinkedList {
     
@@ -823,10 +823,10 @@ class LinkedList {
         
                         </code>
                 </pre>
-              </div>
-              <h3>LinkedList removeNode()<h3>
-                  <div class="code-block">
-                    <pre>
+                            </div>
+                            <h3>LinkedList removeNode()<h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -888,10 +888,10 @@ class LinkedList {
 
                     </code>
             </pre>
-                  </div>
-                  <h3>LinkedList IndexOf()</h3>
-                  <div class="code-block">
-                    <pre>
+                                    </div>
+                                    <h3>LinkedList IndexOf()</h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -929,10 +929,10 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                  </div>
-                  <h3>LinkedList isEmpty()</h3>
-                  <div class="code-block">
-                    <pre>
+                                    </div>
+                                    <h3>LinkedList isEmpty()</h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -957,11 +957,11 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                  </div>
+                                    </div>
 
-                  <h3>LinkedList getIndexAt()</h3>
-                  <div class="code-block">
-                    <pre>
+                                    <h3>LinkedList getIndexAt()</h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -1000,11 +1000,11 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                  </div>
+                                    </div>
 
-                  <h3>LinkedList getLengthOfList()</h3>
-                  <div class="code-block">
-                    <pre>
+                                    <h3>LinkedList getLengthOfList()</h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -1022,10 +1022,10 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                  </div>
-                  <h3>LinkedList getLengthOfList()</h3>
-                  <div class="code-block">
-                    <pre>
+                                    </div>
+                                    <h3>LinkedList getLengthOfList()</h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -1067,10 +1067,10 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                  </div>
-                  <h3>LinkedList swapValues()</h3>
-                  <div class="code-block">
-                    <pre>
+                                    </div>
+                                    <h3>LinkedList swapValues()</h3>
+                                    <div class="code-block">
+                                        <pre>
                     <code>
 class LinkedList {
 
@@ -1136,19 +1136,19 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                  </div>
+                                    </div>
 
 
-    </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Stack</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <h3>Push()</h3>
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Stack</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>Push()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Stack {
 
@@ -1164,11 +1164,11 @@ class Stack {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>Pop()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>Pop()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Stack {
 
@@ -1188,10 +1188,10 @@ class Stack {
 }
                     </code>
                 </pre>
-      </div>
-      <h3>Peek()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>Peek()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Stack {
 
@@ -1211,10 +1211,10 @@ class Stack {
 }
                     </code>
                 </pre>
-      </div>
-      <h3>IsEmpty()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>IsEmpty()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Queue {
 
@@ -1237,19 +1237,19 @@ class Queue {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
 
-    </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Queues</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <h3>Enqueue()</h3>
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Queues</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>Enqueue()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Queue {
     
@@ -1265,11 +1265,11 @@ class Queue {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>Dequeue()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>Dequeue()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Queue {
     
@@ -1285,11 +1285,11 @@ class Queue {
 }
                     </code>
                 </pre>
-      </div>
+            </div>
 
-      <h3>Peek()</h3>
-      <div class="code-block">
-        <pre>
+            <h3>Peek()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Queue {
 
@@ -1305,10 +1305,10 @@ class Queue {
 }
                     </code>
                 </pre>
-      </div>
-      <h3>isEmpty()</h3>
-      <div class="code-block">
-        <pre>
+            </div>
+            <h3>isEmpty()</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 class Queue {
     
@@ -1331,112 +1331,112 @@ class Queue {
 }
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Hash Tables</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Hash Tables</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Tree</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Tree</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Graph</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Graph</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Trie</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Trie</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
-    <button class="accordion-btn btn-ds">
-      <h2>Heap</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-ds">
+            <h2>Heap</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
 
 
-    <button class="accordion-btn btn-a">
-      <h2>Sorting()</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-a">
+            <h2>Sorting()</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
 
-    <button class="accordion-btn btn-a">
-      <h2>Search()</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-a">
+            <h2>Search()</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <div class="code-block">
+                <pre>
                     <code>
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
 
-    <button class="accordion-btn btn-a">
-      <h2>Tree Search()</h2>
-      <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
-    </button>
-    <div class="panel">
-      <h3>To do</h3>
-      <div class="code-block">
-        <pre>
+        <button class="accordion-btn btn-a">
+            <h2>Tree Search()</h2>
+            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+        </button>
+        <div class="panel">
+            <h3>To do</h3>
+            <div class="code-block">
+                <pre>
                     <code>
 
 
@@ -1451,10 +1451,10 @@ swapNodes(index1,index2)
 
                     </code>
                 </pre>
-      </div>
-    </div>
+            </div>
+        </div>
 
-  </main>
+    </main>
 
 
 </body>
