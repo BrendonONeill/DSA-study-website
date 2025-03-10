@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="module" crossorigin src="/DSA-study-website/assets/index-BtQQ1YcV.js"></script>
-  <link rel="stylesheet" crossorigin href="/DSA-study-website/assets/index-BrhTS4rY.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" crossorigin src="/DSA-study-website/assets/index-BGIJiuVr.js"></script>
+  <link rel="stylesheet" crossorigin href="/DSA-study-website/assets/index-SHv2Sex0.css">
 </head>
 
 <body>
@@ -29,11 +29,13 @@
     <main>
         <button class="accordion-btn btn-ds">
             <h2>Array</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <h3>Creating Arrays</h3>
-            <p>About array</p>
+            <div class="text-node">
+                <p>About array</p>
+            </div>
             <div class="ui">
                 <div class="ui-flex">
                     <div class="ui-red"></div>
@@ -57,7 +59,9 @@
                 </div>
             </div>
             <h3>Array.push()</h3>
-            <p>array pushing</p>
+            <div class="text-node">
+                <p>array pushing</p>
+            </div>
             <div class="ui">
                 <div class="ui-flex">
                     <div class="ui-red"></div>
@@ -214,43 +218,27 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
 
         <button class="accordion-btn btn-ds">
             <h2>Singly Linked List</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <h3>Node class</h3>
-            <p>create a node class</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
-<span class="const">class</span> Node {
+class Node {
 
-    <span class="const">constructor</span>(<span class="data">value</span>) {
-        <span class="const">this</span>.value <span class="new">=</span> <span class="data">value</span>
-        <span class="const">this</span>.next <span class="new">=</span> <span class="data">null</span>
+    constructor(value) {
+    this.value = value
+    this.next = null
     }
 }
                     </code>
                 </pre>
-
-                </div>
             </div>
 
             <h3>LinkedList Push()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -278,18 +266,10 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                     </code>
                 </pre>
 
-                </div>
             </div>
             <h3>LinkedList Pop()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -322,19 +302,11 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                     </code>
                 </pre>
 
-                </div>
             </div>
 
             <h3>LinkedList InsertAtPos()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -391,19 +363,11 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                     </code>
                 </pre>
 
-                </div>
             </div>
 
             <h3>LinkedList removeFrom()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -457,18 +421,10 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                     </code>
                 </pre>
 
-                </div>
             </div>
             <h3>LinkedList removeNode()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -524,18 +480,10 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                     </code>
                 </pre>
 
-                </div>
             </div>
             <h3>LinkedList IndexOf()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -576,18 +524,10 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                 </pre>
 
 
-                </div>
             </div>
             <h3>LinkedList isEmpty()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 <span class="const">class</span> LinkedList {
 
@@ -613,19 +553,11 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                     </code>
                 </pre>
 
-                </div>
             </div>
 
             <h3>LinkedList getIndexAt()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
                 <span class="const">class</span> LinkedList <span class="ds">{</span>
                 
@@ -662,19 +594,15 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
                 <span class="ds">}</span>
                     </code>
                 </pre>
-                </div>
+
+
+
+
             </div>
 
             <h3>LinkedList getLengthOfList()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 class LinkedList {
 
@@ -692,19 +620,11 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                </div>
             </div>
 
             <h3>LinkedList reverse()</h3>
-            <p>test</p>
-            <div class="ui">
-                <div class="ui-flex">
-                    <div class="ui-red"></div>
-                    <div class="ui-yellow"></div>
-                    <div class="ui-green"></div>
-                </div>
-                <div class="code-block">
-                    <pre>
+            <div class="code-block">
+                <pre>
                     <code>
 class LinkedList {
 
@@ -740,7 +660,6 @@ class LinkedList {
 }
                     </code>
                 </pre>
-                </div>
             </div>
 
 
@@ -749,7 +668,7 @@ class LinkedList {
 
         <button class="accordion-btn btn-ds">
             <h2>Doubly Linked List</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <h3>Node Class</h3>
@@ -1280,7 +1199,7 @@ class LinkedList {
 
         <button class="accordion-btn btn-ds">
             <h2>Stack</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <h3>Push()</h3>
@@ -1381,7 +1300,7 @@ class Queue {
 
         <button class="accordion-btn btn-ds">
             <h2>Queues</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <h3>Enqueue()</h3>
@@ -1473,7 +1392,7 @@ class Queue {
 
         <button class="accordion-btn btn-ds">
             <h2>Hash Tables</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1486,7 +1405,7 @@ class Queue {
 
         <button class="accordion-btn btn-ds">
             <h2>Tree</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1499,7 +1418,7 @@ class Queue {
 
         <button class="accordion-btn btn-ds">
             <h2>Graph</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1512,7 +1431,7 @@ class Queue {
 
         <button class="accordion-btn btn-ds">
             <h2>Trie</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1525,7 +1444,7 @@ class Queue {
 
         <button class="accordion-btn btn-ds">
             <h2>Heap</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1540,7 +1459,7 @@ class Queue {
 
         <button class="accordion-btn btn-a">
             <h2>Sorting()</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1554,7 +1473,7 @@ class Queue {
 
         <button class="accordion-btn btn-a">
             <h2>Search()</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <div class="code-block">
@@ -1568,7 +1487,7 @@ class Queue {
 
         <button class="accordion-btn btn-a">
             <h2>Tree Search()</h2>
-            <img class="arrow" src="arrow.svg" width="25" height="25" alt="">
+            <img class="arrow" src="arrow-2.svg" width="35" height="35" alt="">
         </button>
         <div class="panel">
             <h3>To do</h3>
@@ -1592,7 +1511,7 @@ swapNodes(index1,index2)
         </div>
 
     </main>
-
+
 </body>
 
 </html>
