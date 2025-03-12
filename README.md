@@ -1,6 +1,10 @@
 # DSA-study-website
 This is a website to help with my DSA study
 
+## Working on
+- UI update colour change and look.
+- Thinking of using web components or some HTML template as the HTML has got messy  
+
 ## Data Structures
 
 - String
