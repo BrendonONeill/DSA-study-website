@@ -1,3 +1,4 @@
+import pokemon from './components.js'
 const accBtn = document.getElementsByClassName("accordion-btn");
 const panel = document.getElementsByClassName("panel");
 const arrow = document.getElementsByClassName("arrow")
