@@ -8,18 +8,15 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="module" crossorigin src="/DSA-study-website/assets/index-D-SmeM4F.js"></script>
-  <link rel="stylesheet" crossorigin href="/DSA-study-website/assets/index-EeEKmbG6.css">
+  <script type="module" crossorigin src="/DSA-study-website/assets/index-CiqGx9dD.js"></script>
+  <link rel="stylesheet" crossorigin href="/DSA-study-website/assets/index-CVQ6JGc-.css">
 </head>
 
 <body>
     <nav>
         <div class="mobile-nav">
             <div>
-                <button class="burger-btn"><img src="burger.svg" height="25" width="25" alt=""></button>
-            </div>
-            <div>
-                <h1>Data & Algos</h1>
+                <h1>DS & A Cheatsheet</h1>
             </div>
         </div>
         <div class="main-nav">
@@ -37,13 +34,18 @@
                 <h3 class="section-header"></h3>
                 <div class="text-code-container">
                     <div class="text-node">
-                        <p class="custom-text"></p>
+                        <p>Default Text.</p>
                     </div>
                     <div class="ui">
                         <div class="ui-flex">
-                            <div class="ui-red"></div>
-                            <div class="ui-yellow"></div>
-                            <div class="ui-green"></div>
+                            <div class="ui-buttons">
+                                <div class="ui-red"></div>
+                                <div class="ui-yellow"></div>
+                                <div class="ui-green"></div>
+                            </div>
+                            <div class="ui-header">
+                                <p class="file-name">untitled.js</p>
+                            </div>
                         </div>
                         <div class="code-block">
                             <pre>
@@ -55,25 +57,25 @@
                 </div>
             </template>
 
-            <custom-slot header="Creating Arrays" code="createArray">
+            <custom-slot header="Creating Arrays" code="createArray" codefile="array.js">
             </custom-slot>
 
-            <custom-slot header="Array.Push()" code="pushArray">
+            <custom-slot header="Array.Push()" code="pushArray" codefile="array.push().js">
             </custom-slot>
 
-            <custom-slot header="Array.Pop()" code="popArray">
+            <custom-slot header="Array.Pop()" code="popArray" codefile="array.pop().js">
             </custom-slot>
 
-            <custom-slot header="Array.Shift()" code="shiftArray">
+            <custom-slot header="Array.Shift()" code="shiftArray" codefile="array.shift().js">
             </custom-slot>
 
-            <custom-slot header="Array.Unshift()" code="unshiftArray">
+            <custom-slot header="Array.Unshift()" code="unshiftArray" codefile="array.unshift().js">
             </custom-slot>
 
-            <custom-slot header="Array.Slice()" code="sliceArray">
+            <custom-slot header="Array.Slice()" code="sliceArray" codefile="array.slice().js">
             </custom-slot>
 
-            <custom-slot header="Array.Splice()" code="spliceArray">
+            <custom-slot header="Array.Splice()" code="spliceArray" codefile="array.splice().js">
             </custom-slot>
 
         </div>
@@ -84,37 +86,42 @@
         </button>
         <div class="panel">
 
-            <custom-slot header="Node Class" code="classNode">
+            <custom-slot header="Node Class" code="classNode" codefile="node.js">
             </custom-slot>
 
-            <custom-slot header="LinkedList Push()" code="pushLinkedList">
+            <custom-slot header="LinkedList Push()" code="pushLinkedList" codefile="linkedlist.push().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList Pop()" code="popLinkedList">
+            <custom-slot header="LinkedList Pop()" code="popLinkedList" codefile="linkedlist.pop().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList InsertAtPos()" code="insertAtPosLinkedList">
+            <custom-slot header="LinkedList InsertAtPos()" code="insertAtPosLinkedList"
+                codefile="linkedlist.insertatpos().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList RemoveFrom()" code="removeFromLinkedList">
+            <custom-slot header="LinkedList RemoveFrom()" code="removeFromLinkedList"
+                codefile="linkedlist.removefrom().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList RemoveNode()" code="removeNodeLinkedList">
+            <custom-slot header="LinkedList RemoveNode()" code="removeNodeLinkedList"
+                codefile="linkedlist.removenode().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList IndexOf()" code="indexOfLinkedList">
+            <custom-slot header="LinkedList IndexOf()" code="indexOfLinkedList" codefile="linkedlist.indexof().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList isEmpty()" code="isEmptyLinkedList">
+            <custom-slot header="LinkedList isEmpty()" code="isEmptyLinkedList" codefile="linkedlist.isempty().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList getIndexAt()" code="getIndexAtLinkedList">
+            <custom-slot header="LinkedList getIndexAt()" code="getIndexAtLinkedList"
+                codefile="linkedlist.getindexat().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList getLengthOf()" code="getLengthOfLinkedList">
+            <custom-slot header="LinkedList getLengthOf()" code="getLengthOfLinkedList"
+                codefile="linkedlist.getlengthof().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList reverse()" code="reverseLinkedList">
+            <custom-slot header="LinkedList reverse()" code="reverseLinkedList" codefile="linkedlist.reverse().js">
             </custom-slot>
 
         </div>
@@ -128,40 +135,46 @@
         <div class="panel">
 
 
-            <custom-slot header="Node Class" code="classNode">
+            <custom-slot header="Node Class" code="classNode" codefile="node.js">
             </custom-slot>
 
-            <custom-slot header="LinkedList Push()" code="pushLinkedList">
+            <custom-slot header="LinkedList Push()" code="pushLinkedList" codefile="dlinkedlist.push().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList Pop()" code="popLinkedList">
+            <custom-slot header="LinkedList Pop()" code="popLinkedList" codefile="dlinkedlist.pop().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList InsertAtPos()" code="insertAtPosLinkedList">
+            <custom-slot header="LinkedList InsertAtPos()" code="insertAtPosLinkedList"
+                codefile="dlinkedlist.insertatpos().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList RemoveFrom()" code="removeFromLinkedList">
+            <custom-slot header="LinkedList RemoveFrom()" code="removeFromLinkedList"
+                codefile="dlinkedlist.removefrom().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList RemoveNode()" code="removeNodeLinkedList">
+            <custom-slot header="LinkedList RemoveNode()" code="removeNodeLinkedList"
+                codefile="dlinkedlist.removenode().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList IndexOf()" code="indexOfLinkedList">
+            <custom-slot header="LinkedList IndexOf()" code="indexOfLinkedList" codefile="dlinkedlist.indexof().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList isEmpty()" code="isEmptyLinkedList">
+            <custom-slot header="LinkedList isEmpty()" code="isEmptyLinkedList" codefile="dlinkedlist.isempty().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList getIndexAt()" code="getIndexAtLinkedList">
+            <custom-slot header="LinkedList getIndexAt()" code="getIndexAtLinkedList"
+                codefile="dlinkedlist.getindexat().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList getLengthOf()" code="getLengthOfLinkedList">
+            <custom-slot header="LinkedList getLengthOf()" code="getLengthOfLinkedList"
+                codefile="dlinkedlist.getlengthof().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList swapValues()" code="reverseLinkedList">
+            <custom-slot header="LinkedList swapValues()" code="reverseLinkedList"
+                codefile="dlinkedlist.swapvalues().js">
             </custom-slot>
 
-            <custom-slot header="LinkedList reverse()" code="reverseLinkedList">
+            <custom-slot header="LinkedList reverse()" code="reverseLinkedList" codefile="dlinkedlist.reverse().js">
             </custom-slot>
 
         </div>

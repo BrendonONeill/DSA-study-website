@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const p of t.addedNodes)p.tagName==="LINK"&&p.rel==="modulepreload"&&c(p)}).observe(document,{childList:!0,subtree:!0});function n(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=n(s);fetch(s.href,t)}})();const r={createArray:`
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const e of t.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();const u={createArray:`
     <span class="com">// Creating an empty array</span>
     <span class="const">const</span> arr <span class="new">=</span> <span class="ds">[</span><span class="ds">]</span>;
     
@@ -68,11 +68,10 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
 <span class="com">// Here we replace 2,3 with 5</span>
 arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data">2</span>,<span class="data">5</span><span class="ds">)</span> <span class="com">// [1,5,4]</span>
     `,classNode:`
-class Node {
-
-    constructor(value) {
-    this.value = value
-    this.next = null
+<span class="const">class</span> Node {
+    <span class="const">constructor</span>(<span class="data">value</span>) {
+        <span class="const">this</span>.value <span class="new">=</span> <span class="data">value</span>
+        <span class="const">this</span>.next <span class="new">=</span> <span class="data">null</span>
     }
 }
     `,pushLinkedList:`
@@ -177,7 +176,7 @@ class Node {
         <span class="const">this</span>.length++
         <span class="new">return</span>
 
-    }
+        }
    
 
     }
@@ -342,86 +341,84 @@ class Node {
 
 }
     `,getIndexAtLinkedList:`
-                <span class="const">class</span> LinkedList <span class="ds">{</span>
+<span class="const">class</span> LinkedList <span class="ds">{</span>
                 
-                    <span class="const">constructor</span><span class="ds">(</span><span class="ds">)</span> <span class="ds">{</span>
-                        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
-                        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
-                        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
-                    <span class="ds">}</span>
+    <span class="const">constructor</span><span class="ds">(</span><span class="ds">)</span> <span class="ds">{</span>
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
+    <span class="ds">}</span>
                 
-                    <span class="const">getValueAtIndex</span><span class="ds">(</span><span class="data">index</span><span class="ds">)</span>
-                    <span class="ds">{</span>
-                        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="data">0</span><span class="ds">)</span>
-                        <span class="ds">{</span>
-                            <span class="new">return</span> <span class="const">this</span>.head.val
-                        <span class="ds">}</span>
+    <span class="const">getValueAtIndex</span><span class="ds">(</span><span class="data">index</span><span class="ds">)</span>
+    <span class="ds">{</span>
+        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="data">0</span><span class="ds">)</span>
+        <span class="ds">{</span>
+            <span class="new">return</span> <span class="const">this</span>.head.val
+        <span class="ds">}</span>
                 
-                        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length - <span class="data">1</span><span class="ds">)</span>
-                        <span class="ds">{</span>
-                            <span class="new">return</span> <span class="const">this</span>.tail.val
-                        <span class="ds">}</span>
+        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length - <span class="data">1</span><span class="ds">)</span>
+        <span class="ds">{</span>
+            <span class="new">return</span> <span class="const">this</span>.tail.val
+        <span class="ds">}</span>
                 
-                        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
-                        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
                 
-                        <span class="const">while</span><span class="ds">(</span>num &#60; <span class="data">index</span><span class="ds">)</span>
-                        <span class="ds">{</span>
-                            curr <span class="new">=</span> curr.next
-                            num++
-                        <span class="ds">}</span>
+        <span class="const">while</span><span class="ds">(</span>num &#60; <span class="data">index</span><span class="ds">)</span>
+        <span class="ds">{</span>
+            curr <span class="new">=</span> curr.next
+            num++
+        <span class="ds">}</span>
                 
-                        <span class="new">return</span> curr.val
-                    <span class="ds">}</span>
+        <span class="new">return</span> curr.val
+        <span class="ds">}</span>
                 
-                <span class="ds">}</span>
+    <span class="ds">}</span>
     `,getLengthOfLinkedList:`
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    getLengthOfList()
+    <span class="const">getLengthOfList</span>()
     {
-        return this.length
+        <span class="new">return</span> <span class="const">this</span>.length
     }
 
 }
     `,reverseLinkedList:`
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    reverse()
+    <span class="const">reverse</span>()
     {
-        let temp = this.head
-        this.head = this.tail
-        this.tail = temp
+        <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">this</span>.head <span class="new">=</span> <span class="const">this</span>.tail
+        <span class="const">this</span>.tail <span class="new">=</span> temp
 
-        let prev = null
-        let curr = this.tail
-        let after = this.tail.next
-        curr.next = null
-        while(curr.val !== this.head.val)
+        <span class="const">let</span> prev <span class="new">=</span> <span class="data">null</span>
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.tail
+        <span class="const">let</span> after <span class="new">=</span> <span class="const">this</span>.tail.next
+        curr.next <span class="new">=</span> <span class="data">null</span>
+        <span class="const">while</span>(curr.val <span class="new">!==</span> <span class="const">this</span>.head.val)
         {
-            prev = curr
-            curr = after
-            if(after.next)
+            prev <span class="new">=</span> curr
+            curr <span class="new">=</span> after
+            <span class="const">if</span>(after.next)
             {
-                after = after.next
+                after <span class="new">=</span> after.next
             }
-            curr.next = prev            
+            curr.next <span class="new">=</span> prev            
         }
-    }
-    
-
+    }   
 }
     `,classNodeD:`
 class Node {
@@ -977,67 +974,71 @@ class Queue {
     }
 }    
     `},h={createArray:`
-    About arrays. 
+    <p>In JavaScript, arrays aren't primitives but are instead Array.</p>
+    
+    <p>JavaScript arrays are resizable and can contain a mix of different data types.</p>
+
+    <p>Arrays can be created in multiple ways from empty, to set lengths or pre-set values.</p>
     `,pushArray:`
-    Array pushing
+    <p>Array pushing</p>
     `,popArray:`
-    Array popping.
+    <p>Array popping.</p>
     `,shiftArray:`
-    Array shift.
+    <p>Array shift.</p>
     `,unshiftArray:`
-    Array unshift.
+    <p>Array unshift.</p>
     `,sliceArray:`
-    Array slice.
+    <p>Array slice.</p>
     `,spliceArray:`
-    Array splice.
+    <p>Array splice.</p>
     `,classNode:`
-    Node class.
+    <p>Node class.</p>
     `,pushLinkedList:`
-    Push Linked List
+    <p>Push Linked List</p>
     `,popLinkedList:`
-    Linked List Pop()
+    <p>Linked List Pop()</p>
     `,insertAtPosLinkedList:`
-    Insert at this position
+    <p>Insert at this position</p>
     `,removeFromLinkedList:`
-    Remove from
+    <p>Remove from</p>
     `,removeNodeLinkedList:`
-    Remove Node
+    <p>Remove Node</p>
     `,indexOfLinkedList:`
-    Index of a node
+    <p>Index of a node</p>
     `,isEmptyLinkedList:`
-    Is the linked list empty
+    <p>Is the linked list empty</p>
     `,getIndexAtLinkedList:`
-    get index at
+    <p>get index at</p>
     `,getLengthOfLinkedList:`
-    get the length of the linked list
+    <p>get the length of the linked list</p>
     `,reverseLinkedList:`
-     reverse the Linked list
+     <p>reverse the Linked list</p>
     `,classNodeD:`
-
+     <p>default text.</p>
     `,pushLinkedListD:`
-
+     <p>default text.</p>
     `,popLinkedListD:`
-
+     <p>default text.</p>
     `,insertAtPosLinkedListD:`
-
+     <p>default text.</p>
     `,removeFromLinkedListD:`
-
+     <p>default text.</p>
     `,removeNodeLinkedListD:`
-
+     <p>default text.</p>
     `,indexOfLinkedListD:`
-
+     <p>default text.</p>
     `,isEmptyLinkedListD:`
-
+     <p>default text.</p>
     `,getIndexAtLinkedListD:`
-
+     <p>default text.</p>
     `,getLengthOfLinkedListD:`
-
+     <p>default text.</p>
     `,reverseLinkedListD:`
-
+     <p>default text.</p>
     `,swapValuesLinkedListD:`
-
+     <p>default text.</p>
     `,pushStack:`
-
+     
     `,popStack:`
 
     `,peekStack:`
@@ -1052,4 +1053,4 @@ class Queue {
     
     `,isEmptyQueue:`
     
-    `};class u extends HTMLElement{constructor(){super();const n=document.getElementById("custom-template").content.cloneNode(!0),c=this.getAttribute("header"),s=this.getAttribute("code");console.log(s,r);const t=r[s],p=h[s];console.log(t),n.querySelector(".section-header").textContent=c,n.querySelector(".custom-text").textContent=p,n.querySelector(".custom-code").innerHTML=t,this.appendChild(n)}}customElements.define("custom-slot",u);const d=document.getElementsByClassName("accordion-btn"),i=document.getElementsByClassName("panel"),m=document.getElementsByClassName("arrow"),o=[1,2,3,4];o.splice(1,2,5);console.log(o);for(let e=0;e<d.length;e++)d[e].addEventListener("click",function(){this.classList.toggle("active"),m[e].classList.toggle("rotate"),i[e].style.maxHeight?i[e].style.maxHeight=null:i[e].style.maxHeight=i[e].scrollHeight+"px"});class w{constructor(a){this.val=a,this.next=null,this.prev}}class L{constructor(){this.head=null,this.tail=null,this.length=0}Push(a){const n=new w(a);if(this.length++,this.head){this.tail.next=n,n.prev=this.tail,this.tail=n;return}else{this.head=n,this.tail=n;return}}Pop(){if(!this.head)return;let a=this.head,n=this.head;for(;a.next;)n=a,a=a.next;return this.tail=n,this.tail.next=null,this.length--,this.length===0&&(this.head=null,this.tail=null),a.prev=null,a}}let l=new L;l.Push(4);l.Push(3);l.Push(2);l.Push(1);console.log(l);
+    `};class m extends HTMLElement{constructor(){super();const a=document.getElementById("custom-template").content.cloneNode(!0),c=this.getAttribute("header"),s=this.getAttribute("code"),t=this.getAttribute("codefile"),e=u[s],o=h[s];a.querySelector(".section-header").textContent=c,a.querySelector(".text-node").innerHTML=o,a.querySelector(".custom-code").innerHTML=e,a.querySelector(".file-name").textContent=t,this.appendChild(a)}}customElements.define("custom-slot",m);const i=document.getElementsByClassName("accordion-btn"),r=document.getElementsByClassName("panel"),w=document.getElementsByClassName("arrow"),d=[1,2,3,4];d.splice(1,2,5);console.log(d);for(let p=0;p<i.length;p++)i[p].addEventListener("click",function(){this.classList.toggle("active"),w[p].classList.toggle("rotate"),r[p].style.maxHeight?r[p].style.maxHeight=null:r[p].style.maxHeight=r[p].scrollHeight+"px"});class f{constructor(n){this.val=n,this.next=null,this.prev}}class x{constructor(){this.head=null,this.tail=null,this.length=0}Push(n){const a=new f(n);if(this.length++,this.head){this.tail.next=a,a.prev=this.tail,this.tail=a;return}else{this.head=a,this.tail=a;return}}Pop(){if(!this.head)return;let n=this.head,a=this.head;for(;n.next;)a=n,n=n.next;return this.tail=a,this.tail.next=null,this.length--,this.length===0&&(this.head=null,this.tail=null),n.prev=null,n}}let l=new x;l.Push(4);l.Push(3);l.Push(2);l.Push(1);console.log(l);
