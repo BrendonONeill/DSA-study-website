@@ -1,127 +1,131 @@
 export const textStore = {
     createArray: 
     `
-    About arrays. 
+    <p>In JavaScript, arrays aren't primitives but are instead Array.</p>
+    
+    <p>JavaScript arrays are resizable and can contain a mix of different data types.</p>
+
+    <p>Arrays can be created in multiple ways from empty, to set lengths or pre-set values.</p>
     `,
     pushArray:
     `
-    Array pushing
+    <p>Array pushing</p>
     `,
     popArray:
     `
-    Array popping.
+    <p>Array popping.</p>
     `,
     shiftArray:
     `
-    Array shift.
+    <p>Array shift.</p>
     `,
     unshiftArray:
     `
-    Array unshift.
+    <p>Array unshift.</p>
     `,
     sliceArray:
     `
-    Array slice.
+    <p>Array slice.</p>
     `,
     spliceArray:
     `
-    Array splice.
+    <p>Array splice.</p>
     `,
     classNode:
     `
-    Node class.
+    <p>Node class.</p>
     `,
     pushLinkedList:
     `
-    Push Linked List
+    <p>Push Linked List</p>
     `,
     popLinkedList:
     `
-    Linked List Pop()
+    <p>Linked List Pop()</p>
     `,
     insertAtPosLinkedList:
     `
-    Insert at this position
+    <p>Insert at this position</p>
     `,
     removeFromLinkedList:
     `
-    Remove from
+    <p>Remove from</p>
     `,
     removeNodeLinkedList:
     `
-    Remove Node
+    <p>Remove Node</p>
     `,
     indexOfLinkedList:
     `
-    Index of a node
+    <p>Index of a node</p>
     `,
     isEmptyLinkedList:
     `
-    Is the linked list empty
+    <p>Is the linked list empty</p>
     `,
     getIndexAtLinkedList:
     `
-    get index at
+    <p>get index at</p>
     `,
     getLengthOfLinkedList:
     `
-    get the length of the linked list
+    <p>get the length of the linked list</p>
     `,
     reverseLinkedList:
     `
-     reverse the Linked list
+     <p>reverse the Linked list</p>
     `,
     classNodeD:
     `
-
+     <p>default text.</p>
     `,
     pushLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     popLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     insertAtPosLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     removeFromLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     removeNodeLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     indexOfLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     isEmptyLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     getIndexAtLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     getLengthOfLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     reverseLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     swapValuesLinkedListD:
     `
-
+     <p>default text.</p>
     `,
     pushStack:
     `
-
+     
     `,
     popStack:
     `

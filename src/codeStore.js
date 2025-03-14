@@ -84,11 +84,10 @@ arr.splice<span class="ds">(</span><span class="data">1</span>,<span class="data
     `,
     classNode:
     `
-class Node {
-
-    constructor(value) {
-    this.value = value
-    this.next = null
+<span class="const">class</span> Node {
+    <span class="const">constructor</span>(<span class="data">value</span>) {
+        <span class="const">this</span>.value <span class="new">=</span> <span class="data">value</span>
+        <span class="const">this</span>.next <span class="new">=</span> <span class="data">null</span>
     }
 }
     `,
@@ -199,7 +198,7 @@ class Node {
         <span class="const">this</span>.length++
         <span class="new">return</span>
 
-    }
+        }
    
 
     }
@@ -374,90 +373,88 @@ class Node {
     `,
     getIndexAtLinkedList:
     `
-                <span class="const">class</span> LinkedList <span class="ds">{</span>
+<span class="const">class</span> LinkedList <span class="ds">{</span>
                 
-                    <span class="const">constructor</span><span class="ds">(</span><span class="ds">)</span> <span class="ds">{</span>
-                        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
-                        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
-                        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
-                    <span class="ds">}</span>
+    <span class="const">constructor</span><span class="ds">(</span><span class="ds">)</span> <span class="ds">{</span>
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
+    <span class="ds">}</span>
                 
-                    <span class="const">getValueAtIndex</span><span class="ds">(</span><span class="data">index</span><span class="ds">)</span>
-                    <span class="ds">{</span>
-                        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="data">0</span><span class="ds">)</span>
-                        <span class="ds">{</span>
-                            <span class="new">return</span> <span class="const">this</span>.head.val
-                        <span class="ds">}</span>
+    <span class="const">getValueAtIndex</span><span class="ds">(</span><span class="data">index</span><span class="ds">)</span>
+    <span class="ds">{</span>
+        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="data">0</span><span class="ds">)</span>
+        <span class="ds">{</span>
+            <span class="new">return</span> <span class="const">this</span>.head.val
+        <span class="ds">}</span>
                 
-                        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length - <span class="data">1</span><span class="ds">)</span>
-                        <span class="ds">{</span>
-                            <span class="new">return</span> <span class="const">this</span>.tail.val
-                        <span class="ds">}</span>
+        <span class="const">if</span><span class="ds">(</span><span class="data">index</span> <span class="new">===</span> <span class="const">this</span>.length - <span class="data">1</span><span class="ds">)</span>
+        <span class="ds">{</span>
+            <span class="new">return</span> <span class="const">this</span>.tail.val
+        <span class="ds">}</span>
                 
-                        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
-                        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">let</span> num <span class="new">=</span> <span class="data">0</span>
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.head
                 
-                        <span class="const">while</span><span class="ds">(</span>num &#60; <span class="data">index</span><span class="ds">)</span>
-                        <span class="ds">{</span>
-                            curr <span class="new">=</span> curr.next
-                            num++
-                        <span class="ds">}</span>
+        <span class="const">while</span><span class="ds">(</span>num &#60; <span class="data">index</span><span class="ds">)</span>
+        <span class="ds">{</span>
+            curr <span class="new">=</span> curr.next
+            num++
+        <span class="ds">}</span>
                 
-                        <span class="new">return</span> curr.val
-                    <span class="ds">}</span>
+        <span class="new">return</span> curr.val
+        <span class="ds">}</span>
                 
-                <span class="ds">}</span>
+    <span class="ds">}</span>
     `,
     getLengthOfLinkedList:
     `
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    getLengthOfList()
+    <span class="const">getLengthOfList</span>()
     {
-        return this.length
+        <span class="new">return</span> <span class="const">this</span>.length
     }
 
 }
     `,
     reverseLinkedList:
     `
-class LinkedList {
+<span class="const">class</span> LinkedList {
 
-    constructor() {
-        this.head = null
-        this.tail = null
-        this.length = 0
+    <span class="const">constructor</span>() {
+        <span class="const">this</span>.head <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.tail <span class="new">=</span> <span class="data">null</span>
+        <span class="const">this</span>.length <span class="new">=</span> <span class="data">0</span>
     }
 
-    reverse()
+    <span class="const">reverse</span>()
     {
-        let temp = this.head
-        this.head = this.tail
-        this.tail = temp
+        <span class="const">let</span> temp <span class="new">=</span> <span class="const">this</span>.head
+        <span class="const">this</span>.head <span class="new">=</span> <span class="const">this</span>.tail
+        <span class="const">this</span>.tail <span class="new">=</span> temp
 
-        let prev = null
-        let curr = this.tail
-        let after = this.tail.next
-        curr.next = null
-        while(curr.val !== this.head.val)
+        <span class="const">let</span> prev <span class="new">=</span> <span class="data">null</span>
+        <span class="const">let</span> curr <span class="new">=</span> <span class="const">this</span>.tail
+        <span class="const">let</span> after <span class="new">=</span> <span class="const">this</span>.tail.next
+        curr.next <span class="new">=</span> <span class="data">null</span>
+        <span class="const">while</span>(curr.val <span class="new">!==</span> <span class="const">this</span>.head.val)
         {
-            prev = curr
-            curr = after
-            if(after.next)
+            prev <span class="new">=</span> curr
+            curr <span class="new">=</span> after
+            <span class="const">if</span>(after.next)
             {
-                after = after.next
+                after <span class="new">=</span> after.next
             }
-            curr.next = prev            
+            curr.next <span class="new">=</span> prev            
         }
-    }
-    
-
+    }   
 }
     `,
     classNodeD:

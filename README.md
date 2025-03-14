@@ -2,8 +2,7 @@
 This is a website to help with my DSA study
 
 ## Working on
-- UI update colour change and look.
-- Thinking of using web components or some HTML template as the HTML has got messy  
+- Might change how I handle the text as its not working how I wanted it might look at other solutions.  
 
 ## Data Structures
 

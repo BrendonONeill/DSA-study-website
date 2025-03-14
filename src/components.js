@@ -10,14 +10,13 @@ class CustomComponents extends HTMLElement{
 
         const header = this.getAttribute("header")
         const code = this.getAttribute("code")
-        console.log(code, codeStore)
-        const genCode = codeStore[code]
+        const file = this.getAttribute("codefile")
+        const genCode = codeStore[code] 
         const genText = textStore[code]
-        console.log(genCode)
-
         cloneContainer.querySelector(".section-header").textContent = header
-        cloneContainer.querySelector(".custom-text").textContent = genText
+        cloneContainer.querySelector(".text-node").innerHTML = genText
         cloneContainer.querySelector(".custom-code").innerHTML = genCode
+        cloneContainer.querySelector(".file-name").textContent = file 
 
         this.appendChild(cloneContainer)
     }
